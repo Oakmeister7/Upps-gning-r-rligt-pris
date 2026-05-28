@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Uppsägningstider — Svenska Elhandelsbolag 2026</title>
-<meta name="description" content="Jämför uppsägningstider för rörliga elavtal hos 48 svenska elhandelsbolag. Sorterat efter storlek med filter, sök och detaljvy. Uppdaterad maj 2026.">
+<meta name="description" content="Jämför uppsägningstider för rörliga elavtal hos 47 svenska elhandelsbolag. Sorterat efter storlek med filter, sök och detaljvy. Uppdaterad maj 2026.">
 <meta property="og:title" content="Uppsägningstider — Rörliga Elavtal 2026">
-<meta property="og:description" content="Kartläggning av 48 svenska elhandelsbolag: uppsägningstider, bindningstider och villkorsstandard för rörliga elavtal.">
+<meta property="og:description" content="Kartläggning av 47 svenska elhandelsbolag: uppsägningstider, bindningstider och villkorsstandard för rörliga elavtal.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="sv_SE">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
@@ -148,7 +148,7 @@ tr.detail-row.open .detail-content{max-height:500px;padding:1.2rem 1.5rem;border
     <span id="themeLabel">Ljust läge</span>
   </button>
   <h1>Uppsägningstider <span>Rörligt Elavtal</span></h1>
-  <p>Kartläggning av 48 svenska elhandelsbolag — sorterade efter storlek. Klicka på en rad för detaljer.</p>
+  <p>Kartläggning av 47 svenska elhandelsbolag — sorterade efter storlek. Klicka på en rad för detaljer.</p>
   <div class="badge"><span class="dot"></span> Uppdaterad maj 2026</div>
 </section>
 <div class="container">
@@ -247,6 +247,9 @@ var DATA = [
   {rank:47,name:"Stockholms Elbolag AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:0,label:"0 dagar",standard:"ELHANDEL 2025 K + egna",note:"⚠ PMD fällde Stockholms Elbolag 2026-04-28 (marknadsföringslagen, 2 MSEK vite). Tillsvidare rörligt: 0 mån uppsägning.",binding:"Ingen",source:"stockholmselbolag.se",url:"https://www.stockholmselbolag.se/b2b_b2c_sthlm_villkor_20230401/",verified:true,vdate:"2026-05-27"},
   {rank:48,name:"Svekraft AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:0,label:"0 dagar",standard:"ELHANDEL 2025 K + egna",note:"Del av Elify Energy Group. 0 mån bind + 0 mån uppsägning privat och företag.",binding:"Ingen",source:"svekraft.com",url:"https://www.svekraft.com/avtalsvillkor-kort/",verified:true,vdate:"2026-05-27"},
   {rank:49,name:"BestEl",parent:"",product:"Rörligt elpris",days:30,label:"30 dagar",standard:"ELHANDEL 2025 K + BestEl villkor 2026-2",note:"Verifierad: 30 dagars uppsägningstid (§2, bryttidpunkt till lämpligt månadsskifte).",binding:"Ingen för rörligt",source:"bestel.se",url:"https://www.bestel.se/elavtal/avtalsvilkor-el/",verified:true,vdate:"2026-05-27"},
+  {rank:50,name:"Nordic Best Energi",parent:"",product:"Rörligt löpande / Mix-avtal",days:30,label:"1 mån",standard:"Allmänna avtalsvillkor + egna",note:"Verifierad: avsnitt 'Uppsägningstid' anger 1 mån för Rörligt löpande/Förvaltat. ⚠ Produktspecifik text för Mix anger 30 dagar – diskrepans i dokumentet. Mix-avtal: ingen lösenavgift vid förtida uppsägning.",binding:"Ingen för rörligt löpande",source:"nordicbestenergi.se",url:"https://www.nordicbestenergi.se/_files/ugd/c3b6f9_22ec8e869a85420ebfa2aa0a5d4f9956.pdf",verified:true,vdate:"2026-05-27"},
+  {rank:51,name:"Svea Solar Park Energy AB",parent:"",product:"Månadspris / Kvartspris (Sunbeam)",days:30,label:"30 dagar",standard:"ELHANDEL 2025 K + egna villkor",note:"Verifierad: §10.1 anger 30 dagars ömsesidig uppsägningstid. Villkor gäller från 2026-03-06. Fast elpris: lösenavgift 10 öre/kWh + 400 kr vid förtida uppsägning.",binding:"Ingen för rörligt",source:"sveasolar.se",url:"https://svea-solar-cms-storage-prod.s3.amazonaws.com/documents/Svea_Solars_sarskilda_villkor_for_Sunbeam_ink._Elavtal_for_avtal_med_konsument.pdf",verified:true,vdate:"2026-05-27"},
+  {rank:52,name:"Storuman Energi AB",parent:"",product:"Rörligt spot / Tillsvidarepris",days:14,label:"14 dagar",standard:"EL 2012 K rev 2 + egna villkor",note:"Verifierad: §8 anger att avtalet löper tillsvidare och upphör vid månadsskifte närmast efter 14 dagar. Elmix: 12/24/36 mån bindningstid + lösenavgift.",binding:"Ingen för rörligt spot",source:"storumanenergi.se",url:"https://storumanenergi.se/media/iwfljre2/avtalsvillkor_1213_konsument.pdf",verified:true,vdate:"2026-05-27"},
 ];
 
 function getPillClass(d){if(d<0)return'gray';if(d<=14)return'green';if(d<=31)return'blue';if(d<=60)return'yellow';return'red'}
