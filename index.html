@@ -4,43 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Uppsägningstider — Svenska Elhandelsbolag 2026</title>
-<meta name="description" content="Jämför uppsägningstider för rörliga elavtal hos 47 svenska elhandelsbolag. Sorterat efter storlek med filter, sök och detaljvy. Uppdaterad juli 2026.">
+<meta name="description" content="Jämför uppsägningstider för rörliga elavtal hos svenska elhandelsbolag. Sorterat efter storlek med filter, sök och detaljvy. Uppdaterad november 2026.">
 <meta property="og:title" content="Uppsägningstider — Rörliga Elavtal 2026">
-<meta property="og:description" content="Kartläggning av 47 svenska elhandelsbolag: uppsägningstider, bindningstider och villkorsstandard för rörliga elavtal.">
+<meta property="og:description" content="Kartläggning av svenska elhandelsbolag:uppsägningstider, bindningstider och villkorsstandard för rörliga elavtal.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="sv_SE">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,400&amp;display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#f5f0e8;--surface:#faf7f2;--surface2:#f0ebe1;--surface3:#e8e2d6;
-  --border:#d9d0c1;--border-light:#c9bfae;
-  --text:#2c2416;--text-dim:#6b5e4d;--text-muted:#9a8d7c;
-  --accent:#0f8a6b;--accent-dim:#0d7159;--accent-glow:rgba(15,138,107,0.1);
-  --danger:#c0392b;--danger-dim:rgba(192,57,43,0.1);
-  --warn:#d4890a;--warn-dim:rgba(212,137,10,0.1);
-  --good:#27864a;--good-dim:rgba(39,134,74,0.1);
-  --blue:#2874a6;--blue-dim:rgba(40,116,166,0.1);
-  --radius:12px;--radius-sm:8px;--radius-xs:6px;
-  --font-body:'DM Sans',sans-serif;--font-display:'Fraunces',serif;
-  --hero-bg:linear-gradient(165deg,#ede7db 0%,#f2ece0 40%,#e8e0d0 100%);
-  --hero-fade:var(--bg);
-  --noise-opacity:0.15;
-  --orb-a:#0f8a6b;--orb-b:#2874a6;
+--bg:#f5f0e8;--surface:#faf7f2;--surface2:#f0ebe1;--surface3:#e8e2d6;
+--border:#d9d0c1;--border-light:#c9bfae;
+--text:#2c2416;--text-dim:#6b5e4d;--text-muted:#9a8d7c;
+--accent:#0f8a6b;--accent-dim:#0d7159;--accent-glow:rgba(15,138,107,0.1);
+--danger:#c0392b;--danger-dim:rgba(192,57,43,0.1);
+--warn:#d4890a;--warn-dim:rgba(212,137,10,0.1);
+--good:#27864a;--good-dim:rgba(39,134,74,0.1);
+--blue:#2874a6;--blue-dim:rgba(40,116,166,0.1);
+--radius:12px;--radius-sm:8px;--radius-xs:6px;
+--font-body:'DM Sans',sans-serif;--font-display:'Fraunces',serif;
+--hero-bg:linear-gradient(165deg,#ede7db 0%,#f2ece0 40%,#e8e0d0 100%);
+--hero-fade:var(--bg);
+--noise-opacity:0.15;
+--orb-a:#0f8a6b;--orb-b:#2874a6;
 }
 [data-theme="dark"]{
-  --bg:#0c0f14;--surface:#13161d;--surface2:#1a1e27;--surface3:#222734;
-  --border:#2a2f3d;--border-light:#353b4d;
-  --text:#e8eaf0;--text-dim:#8a90a2;--text-muted:#5c6175;
-  --accent:#22d3a7;--accent-dim:#1a9e7e;--accent-glow:rgba(34,211,167,0.12);
-  --danger:#ef5350;--danger-dim:rgba(239,83,80,0.15);
-  --warn:#ffb74d;--warn-dim:rgba(255,183,77,0.12);
-  --good:#66bb6a;--good-dim:rgba(102,187,106,0.12);
-  --blue:#42a5f5;--blue-dim:rgba(66,165,245,0.12);
-  --hero-bg:linear-gradient(165deg,#0f1319 0%,#131924 40%,#0e1a20 100%);
-  --hero-fade:var(--bg);
-  --noise-opacity:0.4;
-  --orb-a:#22d3a7;--orb-b:#42a5f5;
+--bg:#0c0f14;--surface:#13161d;--surface2:#1a1e27;--surface3:#222734;
+--border:#2a2f3d;--border-light:#353b4d;
+--text:#e8eaf0;--text-dim:#8a90a2;--text-muted:#5c6175;
+--accent:#22d3a7;--accent-dim:#1a9e7e;--accent-glow:rgba(34,211,167,0.12);
+--danger:#ef5350;--danger-dim:rgba(239,83,80,0.15);
+--warn:#ffb74d;--warn-dim:rgba(255,183,77,0.12);
+--good:#66bb6a;--good-dim:rgba(102,187,106,0.12);
+--blue:#42a5f5;--blue-dim:rgba(66,165,245,0.12);
+--hero-bg:linear-gradient(165deg,#0f1319 0%,#131924 40%,#0e1a20 100%);
+--hero-fade:var(--bg);
+--noise-opacity:0.4;
+--orb-a:#22d3a7;--orb-b:#42a5f5;
 }
 html{font-size:15px;scroll-behavior:smooth}
 body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;transition:background .35s ease,color .35s ease}
@@ -90,11 +90,11 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9999;
 .filter-btn.active{background:var(--accent-glow);border-color:var(--accent-dim);color:var(--accent)}
 .sort-select{padding:.5rem .9rem;border-radius:var(--radius-xs);background:var(--surface);border:1px solid var(--border);color:var(--text-dim);font-size:.8rem;cursor:pointer;font-family:var(--font-body);outline:none;transition:border-color .2s}
 .sort-select:focus{border-color:var(--accent)}
-.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.table-scroll{overflow-x:auto;max-height:78vh;overflow-y:auto}
+.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:clip}
+.table-scroll{overflow-x:visible}
+@media(max-width:940px){.table-scroll{overflow-x:auto}}
 table{width:100%;border-collapse:collapse;min-width:860px}
-thead{position:sticky;top:0;z-index:2}
-thead th{background:var(--surface2);padding:.75rem 1rem;text-align:left;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);box-shadow:0 1px 0 var(--border);white-space:nowrap;user-select:none;transition:color .15s}
+thead th{position:sticky;top:0;z-index:2;background:var(--surface2);padding:.75rem 1rem;text-align:left;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);box-shadow:0 1px 0 var(--border);white-space:nowrap;user-select:none;transition:color .15s}
 thead th[data-sort]{cursor:pointer}
 thead th[data-sort]:hover{color:var(--accent)}
 thead th .sort-arrow{font-size:.65rem;margin-left:.3rem;opacity:0;transition:opacity .15s}
@@ -111,7 +111,6 @@ td.days{font-family:var(--font-display);font-weight:700;font-size:1rem;white-spa
 .pill{display:inline-block;padding:.25rem .7rem;border-radius:999px;font-size:.88rem;font-weight:600;line-height:1.5;white-space:nowrap}
 .pill.green{background:var(--good-dim);color:var(--good)}
 .pill.yellow{background:var(--warn-dim);color:var(--warn)}
-.pill.red{background:var(--danger-dim);color:var(--danger)}
 .pill.blue{background:var(--blue-dim);color:var(--blue)}
 td.note{font-size:.78rem;color:var(--text-dim);max-width:280px;line-height:1.45}
 .no-results{text-align:center;padding:4rem 1rem;color:var(--text-muted);font-size:.95rem;display:flex;flex-direction:column;align-items:center;gap:1rem}
@@ -120,8 +119,11 @@ tr.expandable{cursor:pointer}
 tr.detail-row{display:none}
 tr.detail-row.open{display:table-row}
 tr.detail-row td{padding:0;border-bottom:none;background:var(--surface2)}
-.detail-content{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .4s ease,border-color .4s ease;padding:0 1.5rem;border-bottom:0px solid transparent}
-tr.detail-row.open .detail-content{max-height:1200px;padding:1.2rem 1.5rem;border-bottom:1px solid var(--border)}
+.detail-content{padding:1.2rem 1.5rem;border-bottom:1px solid var(--border)}
+tr.detail-row.open .detail-content{animation:detailIn .25s ease both}
+tr.detail-row.open.noanim .detail-content{animation:none}
+@keyframes detailIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){tr.detail-row.open .detail-content{animation:none}}
 .detail-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.75rem}
 .detail-item .dt{font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:500}
 .detail-item .dd{font-size:.85rem;color:var(--text);margin-top:.15rem}
@@ -146,240 +148,328 @@ tr.expandable:hover .lasmer{text-decoration:underline}
 .year-table .start-late{color:var(--danger);font-weight:600}
 .legend{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.5rem;padding:1rem 1.25rem;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm)}
 .legend-item{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--text-dim)}
+.calc-box{background:var(--accent-glow);border:1px solid var(--accent-dim);border-radius:var(--radius-sm);padding:.85rem 1rem}
+@media(max-width:940px){.calc-box{position:sticky;left:.75rem;justify-self:start;width:100%;max-width:calc(100vw - 3.6rem)}}
+.calc-row{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-top:.45rem}
+.calc-row label{font-size:.84rem;color:var(--text-dim)}
+.calc-date{padding:.4rem .6rem;border:1px solid var(--border-light);border-radius:var(--radius-xs);background:var(--surface);color:var(--text);font-family:var(--font-body);font-size:.9rem}
+.calc-date:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-glow)}
+[data-theme="dark"] .calc-date{color-scheme:dark}
+.calc-today{padding:.4rem .8rem;border-radius:var(--radius-xs);background:var(--surface);border:1px solid var(--border-light);color:var(--text-dim);font-size:.8rem;cursor:pointer;font-family:var(--font-body)}
+.calc-today:hover{color:var(--text);border-color:var(--accent-dim)}
+.calc-res{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.7rem;margin-top:.8rem}
+.calc-k{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);font-weight:500}
+.calc-v{display:block;font-size:.92rem;color:var(--text);margin-top:.15rem}
+.calc-v.calc-start{font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:var(--accent)}
+.calc-how{font-size:.77rem;color:var(--text-dim);margin-top:.55rem;line-height:1.45}
+.calc-warn{font-size:.78rem;color:var(--warn);margin-top:.5rem;font-weight:600}
 .footer{text-align:center;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);color:var(--text-muted);font-size:.78rem;line-height:1.6}
 @media(max-width:900px){.hero{padding:2.5rem 1.25rem 2rem}.stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.stats{grid-template-columns:1fr 1fr}.stat-card{padding:1rem}.stat-card .value{font-size:1.4rem}.controls{flex-direction:column}.filter-group{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:.25rem}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .stat-card,.table-wrap,.legend{animation:fadeUp .5s ease both}
 .stat-card:nth-child(2){animation-delay:.05s}.stat-card:nth-child(3){animation-delay:.1s}.stat-card:nth-child(4){animation-delay:.15s}.table-wrap{animation-delay:.2s}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none !important;transition:none !important}
-}
 </style>
 </head>
 <body>
 <section class="hero">
-  <div class="hero-orb a"></div><div class="hero-orb b"></div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Byt tema">
-    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    <span id="themeLabel">Mörkt läge</span>
-  </button>
-  <h1>Uppsägningstider <span>Rörligt Elavtal</span></h1>
-  <p>Kartläggning av 47 svenska elhandelsbolag — sorterade efter storlek. Klicka på en rad för detaljer.</p>
-  <div class="badge"><span class="dot"></span> Uppdaterad juli 2026</div>
+<div class="hero-orb a"></div><div class="hero-orb b"></div>
+<button class="theme-toggle" id="themeToggle" aria-label="Byt tema">
+<svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+<span id="themeLabel">Mörkt läge</span>
+</button>
+<h1>Uppsägningstider <span>Rörligt Elavtal</span></h1>
+<p>Kartläggning av <span id="count"></span> svenska elhandelsbolag — sorterade efter storlek. Klicka på ett bolag för detaljer och för att räkna ut tidigast startdatum.</p>
+<div class="badge"><span class="dot"></span> Uppdaterad 11 november 2026</div>
 </section>
 <div class="container">
-  <div class="stats" id="stats"></div>
-  <div class="controls">
-    <div class="search-wrap">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" id="search" placeholder="Sök bolag eller produkt…" aria-label="Sök bolag eller produkt">
-      <button class="search-clear" id="searchClear" type="button" aria-label="Rensa sökning">✕</button>
-    </div>
-    <div class="filter-group" id="filters">
-      <button class="filter-btn active" data-filter="all">Alla</button>
-      <button class="filter-btn" data-filter="0-14">0–14 dagar</button>
-      <button class="filter-btn" data-filter="30">~1 månad</button>
-      <button class="filter-btn" data-filter="60">2 månader</button>
-      <button class="filter-btn" data-filter="90+">≥ 3 månader</button>
-    </div>
-    <select class="sort-select" id="sortSelect" aria-label="Sortering">
-      <option value="rank-asc">Storlek (standard)</option>
-      <option value="days-asc">Uppsägningstid ↑</option>
-      <option value="days-desc">Uppsägningstid ↓</option>
-      <option value="name-asc">Bolag A–Ö</option>
-      <option value="name-desc">Bolag Ö–A</option>
-    </select>
-  </div>
-  <div class="table-wrap">
-    <div class="table-scroll">
-      <table role="grid">
-        <thead><tr>
-          <th scope="col">#</th><th scope="col" data-sort="name">Bolag<span class="sort-arrow"></span></th><th scope="col">Produkt (rörligt)</th><th scope="col" data-sort="days">Uppsägningstid<span class="sort-arrow"></span></th><th scope="col">Kategori</th><th scope="col">Kommentar</th>
-        </tr></thead>
-        <tbody id="tbody"></tbody>
-      </table>
-    </div>
-    <div class="no-results" id="noResults" style="display:none">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="9" y1="9" x2="13" y2="13"></line><line x1="13" y1="9" x2="9" y2="13"></line></svg>
-      <div>Inga bolag matchar din sökning.<br><small style="color:var(--text-dim)">Testa att justera filter eller sökord.</small></div>
-    </div>
-  </div>
-  <div class="legend">
-    <div class="legend-item"><span class="pill green">●</span> 0–14 dagar</div>
-    <div class="legend-item"><span class="pill blue">●</span> ~1 månad (branschstandard)</div>
-    <div class="legend-item"><span class="pill yellow">●</span> 2 månader</div>
-    <div class="legend-item"><span class="pill red">●</span> ≥ 3 månader</div>
-    <div class="legend-item" style="margin-left:auto;color:var(--text-muted);font-size:.72rem">† = ej fullt verifierad uppsägningstid</div>
-  </div>
-  <div class="footer">
-    Standardordning baserad på DI Energimarknadens sammanställning dec 2025, Ei marknadsöversikt 2026, bolagens årsredovisningar och Elmera Groups pressmeddelanden.<br>
-    Uppsägningstider: Bolagens egna avtalsvillkor och webbsidor, maj–juli 2026. Kontrollera alltid mot ditt specifika avtal.
-  </div>
+<div class="stats" id="stats"></div>
+<div class="controls">
+<div class="search-wrap">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<input type="text" id="search" placeholder="Sök bolag eller produkt…">
+<button class="search-clear" id="searchClear" type="button" aria-label="Rensa sökning">✕</button>
+</div>
+<div class="filter-group" id="filters">
+<button class="filter-btn active" data-filter="all">Alla</button>
+<button class="filter-btn" data-filter="flex">0–21 dagar</button>
+<button class="filter-btn" data-filter="std">~1 månad</button>
+<button class="filter-btn" data-filter="long">Över 1 månad</button>
+</div>
+<select class="sort-select" id="sortSelect">
+<option value="rank-asc">Storlek (standard)</option>
+<option value="days-asc">Uppsägningstid ↑</option>
+<option value="days-desc">Uppsägningstid ↓</option>
+<option value="name-asc">Bolag A–Ö</option>
+<option value="name-desc">Bolag Ö–A</option>
+</select>
+</div>
+<div class="table-wrap">
+<div class="table-scroll">
+<table role="grid">
+<thead><tr>
+<th>#</th><th data-sort="name">Bolag<span class="sort-arrow"></span></th><th>Produkt (rörligt)</th><th data-sort="days">Uppsägningstid<span class="sort-arrow"></span></th><th>Kategori</th><th>Kommentar</th>
+</tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+<div class="no-results" id="noResults" style="display:none">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="9" y1="9" x2="13" y2="13"></line><line x1="13" y1="9" x2="9" y2="13"></line></svg>
+<div>Inga bolag matchar din sökning.<br><small style="color:var(--text-dim)">Testa att justera filter eller sökord.</small></div>
+</div>
+</div>
+<div class="legend">
+<div class="legend-item"><span class="pill green">●</span> 0–21 dagar</div>
+<div class="legend-item"><span class="pill blue">●</span> ~1 månad (branschstandard)</div>
+<div class="legend-item"><span class="pill yellow">●</span> Över 1 månad</div>
+<div class="legend-item" style="margin-left:auto;color:var(--text-muted);font-size:.72rem">† = ej fullt verifierad uppsägningstid</div>
+</div>
+<div class="footer">
+Standardordning baserad på DI Energimarknadens sammanställning dec 2025, Ei marknadsöversikt 2026, bolagens årsredovisningar och Elmera Groups pressmeddelanden.<br>
+Uppsägningstider: Bolagens egna avtalsvillkor och webbsidor, kontrollerade 2026-11-11 (rader utan nytt datum: maj 2026). Kontrollera alltid mot ditt specifika avtal.
+</div>
 </div>
 <script>
 var DATA = [
-  {rank:1,name:"Fortum Markets AB",parent:"",product:"Rörligt Bas / Förnybart / Trygg / Extra",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + Fortums villkor",note:"1 mån från uppsägningsdagen (avtal fr.o.m. 2025-10-01). Äldre avtal kan ha 2 mån.",binding:"Ingen för rörligt",source:"fortum.com",url:"https://assets.ctfassets.net/bs7i8p83z7um/3ClAGmkPC28P9G8mhq7pcs/03f5a270a5f67814cd7baa48fa209862/2025-10-01_S%C3%83_rskilda_Avtalsvillkor_R%C3%83_rligt_M%C3%83_nadspris__final_.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:2,name:"Vattenfall AB",parent:"",product:"Rörligt elpris / Kvartspris",days:30,label:"1 mån",standard:"EL 2012 K rev 2 + Vattenfalls villkor",note:"Anvisat: 0 dagar. Tredjepartskällor anger felaktigt 14 dagar.",binding:"Ingen för rörligt",source:"vattenfall.se",url:"https://www.vattenfall.se/kundservice/avtalsvillkor-och-rattigheter/",verified:true,vdate:"2026-05-27"},
-  {rank:3,name:"E.ON Energilösningar AB",parent:"",product:"Rörligt pris / Spotpris / Inköpspris",days:30,label:"1 mån (30 dgr)",standard:"EL 2012 K rev 2 + E.ON villkor",note:"Samma 30 dagar för företagskunder.",binding:"Ingen för rörligt",source:"eon.se",url:"https://www.eon.se/kundservice/konsumentratt/avtalsvillkor",verified:true,vdate:"2026-05-27"},
-  {rank:4,name:"Göteborg Energi Din El AB",parent:"",product:"Rörligt elpris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + GE villkor",note:"Mix 50/50: 12 mån bindningstid. Anvisat: 14 dagar.",binding:"Ingen för rörligt",source:"goteborgenergi.se",url:"https://www.goteborgenergi.se/kundservice/dokument-blanketter/avtalsvillkor",verified:true,vdate:"2026-05-27"},
-  {rank:5,name:"GodEl i Sverige AB",parent:"",product:"Rörligt elpris / Kvartspris",days:14,label:"14 dagar",standard:"EL 2012 K + GodEls villkor",note:"Ingen bindningstid, ingen uppsägningstid. Vinst går till välgörenhet via stiftelsen GoodCause.",binding:"Ingen",source:"godel.se",url:"https://godel.se/avtalsvillkor/",verified:true,vdate:"2026-05-27"},
-  {rank:6,name:"Jämtkraft AB",parent:"",product:"Rörligt pris (månadsmedel)",days:14,label:"14 dagar",standard:"EL 2012 K / ELHANDEL 2025 K",note:"⚠ Jämtpriset / Lokalpriset (förvaltat): 3 mån.",binding:"Ingen för rörligt",source:"jamtkraft.se",url:"https://www.jamtkraft.se/kundservice/avtalsvillkor/",verified:true,vdate:"2026-05-27"},
-  {rank:7,name:"Bixia AB",parent:"Tekniska verken i Linköping",product:"Bixia Rörligt / Kvartspris",days:14,label:"14 dagar",standard:"EL 2012 K rev 2 + Bixias villkor",note:"⚠ Bixia Framtid: 12 mån uppsägning (förvaltat).",binding:"Ingen för rörligt",source:"bixia.se",url:"https://www.bixia.se/avtalsvillkor-och-rattigheter",verified:true,vdate:"2026-05-27"},
-  {rank:8,name:"Skellefteå Kraft AB",parent:"",product:"Rörligt elpris / Kvartspris",days:14,label:"14 dagar",standard:"EL 2012 K rev 2 + SK villkor",note:"Upphör vid nytt avtal på anläggningen. Mikroprod: 30 dagar.",binding:"Ingen",source:"skekraft.se",url:"https://www.skekraft.se/kundservice/avtalsvillkor-och-blanketter/",verified:true,vdate:"2026-05-27"},
-  {rank:9,name:"Tibber AB",parent:"",product:"Kvartspris (enda produkt)",days:14,label:"14 dagar",standard:"EL2012K + Tibbers villkor",note:"Marknadsförs som 'ingen uppsägningstid' men formellt 14 dagar.",binding:"Ingen",source:"tibber.com",url:"https://tibber.com/se/villkor/elavtalsvillkor",verified:true,vdate:"2026-05-27"},
-  {rank:11,name:"Mälarenergi AB",parent:"",product:"Rörligt månadspris / Dynamiskt elpris",days:30,label:"1 kalendermånad",standard:"EL 2012 K / ELHANDEL 2025 K",note:"⚠ Förvaltad Elfond: 3 mån uppsägning.",binding:"Ingen för rent rörligt",source:"malarenergi.se",url:"https://www.malarenergi.se/el/elavtal/om-elavtal-och-elhandel/avtalsvillkor-elhandel/malarenergi-abs-elhandelsavtalsvillkor--privatkund/",verified:true,vdate:"2026-05-28",special:"<strong>Teckningsdatum → tidigast möjlig start:</strong><ul style='margin:.4rem 0 0;padding-left:1.2rem'><li>Tecknar du <strong>10 jan</strong> → start <strong>1 mars</strong></li><li>Tecknar du <strong>30 jan</strong> → start <strong>1 mars</strong></li></ul><br>Uppsägningstiden är en hel kalendermånad, räknad från nästa månadsskifte. Förvaltad Elfond: 3 månader."},
-  {rank:12,name:"Kraftringen Energi AB",parent:"",product:"Rörligt elpris / Kvartspris / Opti",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"Anvisat: 14 dagar.",binding:"Ingen för rörligt",source:"kraftringen.se",url:"https://www.kraftringen.se/privat/el/vara-elavtal/avtalsvillkor/",verified:true,vdate:"2026-05-27"},
-  {rank:13,name:"Nordic Green Energy",parent:"Elmera Group",product:"Rörligt månadspris / Smart abo.",days:14,label:"14 dagar",standard:"EL 2012 K rev 2 + NGE villkor",note:"⚠ På Energimarknadsbyrån klagomålslista sedan okt 2024 (vilseledande försäljning, brytavgifter). 0 dgr gäller rörligt privat.",binding:"Ingen",source:"nordicgreen.se",url:"https://www.nordicgreen.se/kundservice/avtalsvillkor-privatkunder/",verified:true,vdate:"2026-05-27"},
-  {rank:14,name:"Öresundskraft Marknad AB",parent:"",product:"Rörligt Månadspris / Kvartspris",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"Framtidsavtalet: 12 mån uppsägning.",binding:"Ingen för rörligt",source:"oresundskraft.se",url:"https://www.oresundskraft.se/privat/el/avtalsvillkor-elhandel/",verified:true,vdate:"2026-05-27"},
-  {rank:15,name:"Greenely Premium AB",parent:"",product:"Kvartspris (enda produkt)",days:14,label:"14 dagar",standard:"Egna villkor 2025-04-11",note:"Inget rörligt månadspris, inget fastpris. Enbart kvartspris.",binding:"Ingen",source:"greenely.com",url:"https://www.greenely.com/juridisk-information/konsumtionsavtal",verified:true,vdate:"2026-05-27"},
-  {rank:17,name:"Telinet Energi AB",parent:"Elmera Group (från 2026)",product:"Rörligt förnybart – löpande",days:30,label:"1 mån",standard:"Egna + branschstandard",note:"1 mån uppsägningstid för samtliga avtalstyper. Företag: 3 mån.",binding:"Ingen för löpande rörligt",source:"telinet.se",url:"https://www.telinet.se/avtalsvillkor/privat/",verified:true,vdate:"2026-07-03"},
-  {rank:18,name:"Enkla Elbolaget AB",parent:"Dalakraft AB (del av Jämtkraft-koncernen)",product:"Rörligt pris",days:45,label:"Innev. mån + 1 mån",standard:"EL 2012 K rev 2 + egna villkor",note:"Elfonden Relaxa: 12 mån bind + uppsägning.",binding:"Ingen för rent rörligt",source:"enklaelbolaget.se",url:"https://www.enklaelbolaget.se/avtalsvillkor/",verified:true,vdate:"2026-05-28",special:"<strong>Teckningsdatum → tidigast möjlig start:</strong><ul style='margin:.4rem 0 0;padding-left:1.2rem'><li>Tecknar du <strong>3 jan</strong> → start <strong>1 mars</strong></li><li>Tecknar du <strong>28 jan</strong> → start <strong>1 mars</strong></li></ul><br>Uppsägningstiden är innevarande månad + 1 kalendermånad (§17.2). Slutdatum samma oavsett dag inom samma månad."},
-  {rank:19,name:"Luleå Energi Elhandel AB",parent:"",product:"BörsEl / Kvartspris",days:30,label:"Till månadsskifte",standard:"EL 2012 K / ELHANDEL 2025 K",note:"Rörligt avtal byts/upphör till nästkommande månadsskifte – inte ren dagsfrist.",binding:"Ingen för rörligt",source:"luleaenergi.se",url:"https://www.luleaenergi.se/hjalp/elavtal/sammanfattning-av-avtalsvillkor-for-konsument/",verified:true,vdate:"2026-05-28",special:"<strong>Teckningsdatum → tidigast möjlig start:</strong><ul style='margin:.4rem 0 0;padding-left:1.2rem'><li>Tecknar du <strong>3 jan</strong> → start <strong>1 feb</strong></li><li>Tecknar du <strong>15 jan</strong> → start <strong>1 feb</strong></li><li>Tecknar du <strong>28 jan</strong> → start <strong>1 feb</strong></li></ul><br>Bytet sker vid nästkommande månadsskifte. Kontrollera mot ditt avtal om en minsta frist (t.ex. 14 dgr) också gäller."},
-  {rank:20,name:"Umeå Energi Elhandel AB",parent:"",product:"Rörligt månadspris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + UEEH villkor",note:"",binding:"Ingen för rörligt",source:"umeaenergi.se",url:"https://www.umeaenergi.se/kundservice/ekonomi-och-avtal/avtalsvillkor/elavtal/sarskilda-villkor-for-elhandelsavtal-med-konsumenter-2025-1",verified:true,vdate:"2026-05-27"},
-  {rank:21,name:"Dalakraft AB",parent:"",product:"Rörligt pris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna",note:"14 dagar för Rörligt Pris (§6.2). ⚠ Dala Elfond: innev. mån + 3 kalendermån (§5.2).",binding:"Ingen",source:"dalakraft.se",url:"https://www.dalakraft.se/wp-content/uploads/2026/04/Avtalsvillkor-Dala-Elfond-och-Rorligt-pris-2025K.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:22,name:"Jönköping Energi AB",parent:"",product:"Rörligt månadspris / Kvartspris",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"Mix 50/50, Vinterpris, Fastpris finns också.",binding:"Ingen för rörligt",source:"jonkopingenergi.se",url:"https://jonkopingenergi.se/vi-erbjuder/el/avtal-och-villkor",verified:true,vdate:"2026-05-27"},
-  {rank:23,name:"Karlstads Energi AB",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K (från 2026)",note:"Anvisat: 14 dagar.",binding:"Ingen för rörligt",source:"karlstadsenergi.se",url:"https://karlstadsenergi.se/gemensamt-innehall/kundservice/avtalsvillkor-och-blanketter",verified:true,vdate:"2026-05-27"},
-  {rank:24,name:"Falu Energi & Vatten AB",parent:"",product:"Rörligt pris / Falupriset / Kvartspris",days:21,label:"3 veckor / 1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"⚠ Rent rörligt månadspris: 3 veckor. Falupriset (mix 80/20): 1 mån. Anvisat: 14 dagar.",binding:"Ingen för rörligt",source:"fev.se",url:"https://fev.se/om-oss/avtalsvillkor---alla-samlade.html",verified:true,vdate:"2026-05-28"},
-  {rank:26,name:"Borlänge Energi Försäljning AB",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"30 dagar",standard:"ELHANDEL 2025 K + egna villkor",note:"Verifierad: 30 dagars uppsägningstid (särskilda villkor rev5, gäller fr. 2026-06-01).",binding:"Ingen för rörligt",source:"borlange-energi.se",url:"https://www.borlange-energi.se/download/18.3f81fc2119d24bd36c3e161/1775133784467/sarskilda_avtalsvillkor_elhandel_konsument_(rev5).pdf",verified:true,vdate:"2026-05-27"},
-  {rank:27,name:"Varberg Energi",parent:"",product:"Rörligt Pris / Dynamiskt Pris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna villkor",note:"⚠ VIVA Rörligt: 3 mån. VIVA Trend: 6 mån.",binding:"Ingen för rörligt",source:"varbergenergi.se",url:"https://www.varbergenergi.se/privat/tjanster/el/vara-elavtal/",verified:true,vdate:"2026-05-27"},
-  {rank:28,name:"Kalmar Energi",parent:"",product:"Rörlig el / Kvartspris",days:14,label:"14 dagar",standard:"EL 2012 K rev 2 + egna villkor",note:"Ingen egen uppsägningstid angiven → ELHANDEL 2025 K §6.1: 14 dagar. Företag tidsbundet: 3 mån.",binding:"Ingen för rörligt",source:"kalmarenergi.se",url:"https://1270443e.delivery.rocketcdn.me/app/uploads/2025/04/Kalmar-Energi-Forsaljning-ABs-avtalsvillkor-for-konsument.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:29,name:"HEM (Halmstads E&M)",parent:"",product:"Rörligt elpris / Mitt Kvartspris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + HEM villkor",note:"Kortare än branschstandard.",binding:"Ingen för rörligt",source:"hem.se",url:"https://www.hem.se/kundservice/avtalsvillkor",verified:true,vdate:"2026-05-27"},
-  {rank:30,name:"Mölndal Energi AB",parent:"",product:"Rörligt månadspris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + egna villkor",note:"Verifierad: 1 mån ömsesidig uppsägningstid. Anvisning: 14 dagar.",binding:"Ingen för rörligt",source:"molndalenergi.se",url:"https://www.molndalenergi.se/hubfs/Avtal/Nya%20avtalssidor/Privat/Molndal_Energi_Sammanfattning_avtalsvillkor_for_elhandel_till_konsument.pdf?hsLang=sv-se",verified:true,vdate:"2026-05-27"},
-  {rank:31,name:"C4 Energi AB",parent:"Kristianstad",product:"Rörligt elpris / Kvartspris",days:30,label:"1 mån",standard:"EL 2012 K rev 2 + egna villkor",note:"Branschstandard. Brytkostnad: 500 kr + 5 öre/kWh vid förtida uppsägning bundet.",binding:"Ingen för rörligt",source:"c4energi.se",url:"https://www.c4energi.se/globalassets/dokument/elhandel/elhandel-privat/sarskilda-villkor-k-2023-09-22.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:32,name:"Uddevalla Energi AB",parent:"",product:"Rörligt elpris / Spotpris",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"Verifierad: 1 mån från närmaste månadsskifte. ⚠ Hybrid: innev. mån + 3 kalendermån.",binding:"Ingen för rörligt",source:"uddevallaenergi.se",url:"https://www.uddevallaenergi.se/download/18.1baf6d0b188d19b61f932/1687354380570/Uddevalla%20Energis%20s%C3%A4rskilda%20avtalsvillkor%20f%C3%B6r%20elhandel%20-%20F%C3%B6retag%202023.pdf",verified:true,vdate:"2026-05-27"},
-
-  {rank:34,name:"Svealands Elbolag AB",parent:"Elify Energy Group",product:"Rörligt avtalspris",days:14,label:"14 dagar",standard:"EL 2012 K / ELHANDEL 2025 K + egna",note:"⚠ PMD fällde Svealands Elbolag 2026-04-28 (marknadsföringslagen, 2 MSEK vite). Ei tillsyn feb 2024. Tillsvidareavtal: 1 mån.",binding:"Ingen för rörligt",source:"svealandselbolag.se",url:"https://www.svealandselbolag.se/avtalsvillkor-kort/",verified:true,vdate:"2026-05-27"},
-  {rank:35,name:"Karlshamn Energi",parent:"",product:"Rörligt månadspris / Timpris",days:30,label:"1 mån / 14 dgr",standard:"ELHANDEL 2025 K",note:"⚠ Rörligt månadspris: 1 mån. Timpris: 14 dagar. Mixpris 50/50: 1 mån.",binding:"Ingen för rörligt",source:"karlshamnenergi.se",url:"https://www.karlshamnenergi.se/el/elhandel/avtalvillkor/",verified:true,vdate:"2026-05-28"},
-  {rank:36,name:"Upplands Energi",parent:"",product:"Rörligt Standard / Rörligt Timme",days:45,label:"Innev. mån + 1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"Anvisat: 0 dagar.",binding:"Ingen för rörligt",source:"upplandsenergi.se",url:"https://www.upplandsenergi.se/elavtal/35230.allmanna_avtalsvillkor.html",verified:true,vdate:"2026-05-28",special:"<strong>Teckningsdatum → tidigast möjlig start:</strong><ul style='margin:.4rem 0 0;padding-left:1.2rem'><li>Tecknar du <strong>5 jan</strong> → start <strong>1 mars</strong></li><li>Tecknar du <strong>27 jan</strong> → start <strong>1 mars</strong></li></ul><br>Uppsägningstiden är innevarande månad + 1 månad. Slutdatum samma oavsett dag inom samma månad. Anvisat avtal: ingen uppsägningstid."},
-  {rank:37,name:"Linde Energi",parent:"",product:"Linde Rörligt schablon / Linde Rörligt flex",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + egna villkor",note:"Verifierad: 1 mån ömsesidig uppsägningstid. ⚠ Linde Smart (förvaltat): 3 mån.",binding:"Ingen för rörligt",source:"lindeenergi.se",url:"https://www.lindeenergi.se/download/18.5983c1f019a7678afff4751/1763038484633/Avtalsvillkor%20Linde%20energi%20konsumenter%20251111.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:38,name:"Bodens Energi AB",parent:"",product:"Rörligt elpris (utan bindningstid)",days:14,label:"14 dagar",standard:"Bodens Energi + Energiföretagen",note:"Näringsidkare: 1 mån innan avtalstid.",binding:"Ingen för privat rörligt",source:"bodensenergi.se",url:"https://bodensenergi.se/kundservice/avtalsvillkor/",verified:true,vdate:"2026-05-27"},
-  {rank:40,name:"Tranås Energi AB",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + egna villkor",note:"Schysst pris: 1 eller 3 år bindningstid.",binding:"Ingen för rörligt",source:"tranasenergi.se",url:"https://tranasenergi.se/wp-content/uploads/2025/12/Sarskilda-avtalsvillkor-konsument-rev-2025-12-18.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:41,name:"Motala Energi AB",parent:"Elify Energy Group",product:"Rörligt elavtal",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K + egna",note:"Ei tillsyn 2025-02-20. Brytavgift 990 kr.",binding:"Ingen för rörligt tillsvidare",source:"motalaenergi.se",url:"https://motalaenergi.se/avtalsvillkor-kort/",verified:true,vdate:"2026-05-27"},
-  {rank:42,name:"Bjäre Kraft",parent:"",product:"Rörligt elpris",days:30,label:"1 mån",standard:"Energiföretagen",note:"Verifierad: 1 mån uppsägningstid.",binding:"Ingen för rörligt",source:"bjarekraft.se",url:"https://www.bjarekraft.se/privat/el/elavtal/timpris",verified:true,vdate:"2026-05-27"},
-  {rank:43,name:"Östra Kinds Elkraft",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"1 mån",standard:"Östra Kinds + branschvillkor",note:"Verifierad: 1 mån ömsesidig uppsägningstid (§10c särskilda villkor).",binding:"Ingen för rörligt",source:"ostrakindselkraft.se",url:"https://www.ostrakindselkraft.se/wp-content/uploads/2021/01/ostra-Kinds-Elkrafts-sarskilda-avtalsvillkor-privatkund.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:44,name:"Skövde Energi AB",parent:"Via Billinge Energi AB",product:"Rörligt elpris (Billinge Energi)",days:30,label:"1 mån",standard:"ELHANDEL 2025 K",note:"Verifierad 1 mån (sedan 2026-01-01, tidigare 3 + innev. mån).",binding:"Ingen för rörligt",source:"billingeenergi.se",url:"https://www.billingeenergi.se/kundtjanst/vara-avtalsvillkor/",verified:true,vdate:"2026-05-27"},
-  {rank:45,name:"Herrljunga Elektriska AB",parent:"Via Herrljunga Kraft / Billinge",product:"Rörligt elpris",days:15,label:"15 dagar",standard:"ELHANDEL 2025 K + v.2026.1",note:"Verifierad: 15 dagars uppsägningstid (Modul D §D.2, v.2026.1).",binding:"Ingen för rörligt",source:"herrljunga-kraft.se",url:"https://www.herrljunga-kraft.se/content/uploads/2025/12/Herrljunga-Rorligt-elpris-korr-villkor.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:46,name:"Cheap Energy AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna",note:"⚠ PMD fällde Cheap Energy 2026-04-28 (marknadsföringslagen, 2 MSEK vite). 0 mån bind + 0 mån uppsägning privat.",binding:"Ingen",source:"cheapenergy.se",url:"https://www.cheapenergy.se/vara-villkor_2023_04_01/",verified:true,vdate:"2026-05-27"},
-  {rank:47,name:"Stockholms Elbolag AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna",note:"⚠ PMD fällde Stockholms Elbolag 2026-04-28 (marknadsföringslagen, 2 MSEK vite). Tillsvidare rörligt: 0 mån uppsägning.",binding:"Ingen",source:"stockholmselbolag.se",url:"https://www.stockholmselbolag.se/b2b_b2c_sthlm_villkor_20230401/",verified:true,vdate:"2026-05-27"},
-  {rank:48,name:"Svekraft AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna",note:"Del av Elify Energy Group. 0 mån bind + 0 mån uppsägning privat och företag.",binding:"Ingen",source:"svekraft.com",url:"https://www.svekraft.com/avtalsvillkor-kort/",verified:true,vdate:"2026-05-27"},
-  {rank:49,name:"BestEl",parent:"",product:"Rörligt elpris",days:30,label:"30 dagar",standard:"ELHANDEL 2025 K + BestEl villkor 2026-2",note:"Verifierad: 30 dagars uppsägningstid (§2, bryttidpunkt till lämpligt månadsskifte).",binding:"Ingen för rörligt",source:"bestel.se",url:"https://www.bestel.se/elavtal/avtalsvilkor-el/",verified:true,vdate:"2026-05-27"},
-  {rank:50,name:"Nordic Best Energi",parent:"",product:"Rörligt löpande / Mix-avtal",days:30,label:"1 mån",standard:"Allmänna avtalsvillkor + egna",note:"Verifierad: avsnitt 'Uppsägningstid' anger 1 mån för Rörligt löpande/Förvaltat. ⚠ Produktspecifik text för Mix anger 30 dagar – diskrepans i dokumentet. Mix-avtal: ingen lösenavgift vid förtida uppsägning.",binding:"Ingen för rörligt löpande",source:"nordicbestenergi.se",url:"https://www.nordicbestenergi.se/_files/ugd/c3b6f9_22ec8e869a85420ebfa2aa0a5d4f9956.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:51,name:"Svea Solar Park Energy AB",parent:"",product:"Månadspris / Kvartspris (Sunbeam)",days:30,label:"30 dagar",standard:"ELHANDEL 2025 K + egna villkor",note:"Verifierad: §10.1 anger 30 dagars ömsesidig uppsägningstid. Villkor gäller från 2026-03-06. Fast elpris: lösenavgift 10 öre/kWh + 400 kr vid förtida uppsägning.",binding:"Ingen för rörligt",source:"sveasolar.se",url:"https://svea-solar-cms-storage-prod.s3.amazonaws.com/documents/Svea_Solars_sarskilda_villkor_for_Sunbeam_ink._Elavtal_for_avtal_med_konsument.pdf",verified:true,vdate:"2026-05-27"},
-  {rank:52,name:"Storuman Energi AB",parent:"",product:"Rörligt spot / Tillsvidarepris",days:14,label:"14 dgr → månadsskifte",standard:"EL 2012 K rev 2 + egna villkor",note:"Verifierad: §8 anger att avtalet löper tillsvidare och upphör vid månadsskifte närmast efter 14 dagar. Elmix: 12/24/36 mån bindningstid + lösenavgift.",binding:"Ingen för rörligt spot",source:"storumanenergi.se",url:"https://storumanenergi.se/media/iwfljre2/avtalsvillkor_1213_konsument.pdf",verified:true,vdate:"2026-05-27",special:"<strong>Hela året – när startar nytt avtal?</strong><br><span style=\"font-size:.78rem;color:var(--text-dim)\">Avtalet upphör vid månadsskiftet närmast efter 14 dagar. Brytdatumet (sista dag för start vid nästa månadsskifte) varierar med månadens längd.</span><div style=\"overflow-x:auto\"><table class=\"year-table\"><tr><th>Tecknar i</th><th>Start</th><th>om du tecknar</th><th>Annars start</th><th>om du tecknar</th></tr><tr><td>Januari</td><td class=\"start-now\">1 feb</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 mars</td><td>fr.o.m. 18:e</td></tr><tr><td>Februari</td><td class=\"start-now\">1 mars</td><td>t.o.m. 14:e</td><td class=\"start-late\">1 apr</td><td>fr.o.m. 15:e</td></tr><tr><td>Mars</td><td class=\"start-now\">1 apr</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 maj</td><td>fr.o.m. 18:e</td></tr><tr><td>April</td><td class=\"start-now\">1 maj</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 jun</td><td>fr.o.m. 17:e</td></tr><tr><td>Maj</td><td class=\"start-now\">1 jun</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 jul</td><td>fr.o.m. 18:e</td></tr><tr><td>Juni</td><td class=\"start-now\">1 jul</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 aug</td><td>fr.o.m. 17:e</td></tr><tr><td>Juli</td><td class=\"start-now\">1 aug</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 sep</td><td>fr.o.m. 18:e</td></tr><tr><td>Augusti</td><td class=\"start-now\">1 sep</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 okt</td><td>fr.o.m. 18:e</td></tr><tr><td>September</td><td class=\"start-now\">1 okt</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 nov</td><td>fr.o.m. 17:e</td></tr><tr><td>Oktober</td><td class=\"start-now\">1 nov</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 dec</td><td>fr.o.m. 18:e</td></tr><tr><td>November</td><td class=\"start-now\">1 dec</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 jan</td><td>fr.o.m. 17:e</td></tr><tr><td>December</td><td class=\"start-now\">1 jan</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 feb</td><td>fr.o.m. 18:e</td></tr></table></div><span style=\"font-size:.78rem;color:var(--text-dim)\">Skottår: februari brytdatum blir 15:e i stället för 14:e.</span>"},
+{rank:1,name:"Fortum Markets AB",parent:"",product:"Rörligt Bas / Förnybart / Trygg / Extra",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + Fortums villkor",note:"En (1) månads uppsägningstid räknat från uppsägningsdagen, avgiftsfri (Rörligt Månadspris; gäller avtal tecknade fr.o.m. 2025-10-01). Äldre avtal kan ha 2 mån (baslinje, ej kontrollerat).",binding:"Ingen för rörligt",source:"fortum.com",url:"https://assets.ctfassets.net/bs7i8p83z7um/3ClAGmkPC28P9G8mhq7pcs/03f5a270a5f67814cd7baa48fa209862/2025-10-01_S%C3%83_rskilda_Avtalsvillkor_R%C3%83_rligt_M%C3%83_nadspris__final_.pdf",calc:{t:"m",n:1},calcNote:"Gäller avtal tecknade fr.o.m. 2025-10-01; äldre avtal kan ha längre tid.",verified:true,vdate:"2026-11-11"},
+{rank:2,name:"Vattenfall AB",parent:"",product:"Rörligt elpris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + Vattenfalls villkor",note:"§15c: en månads varsel. Anvisat: 0 dagar. Vintersäkring-varianter (§16c): en månads varsel, tidigast till vintersäkringsperiodens utgång. Version ELV-PRI-260216-1, gäller från 2026-02-16. Tredjepartskällor anger felaktigt 14 dagar.",binding:"Ingen för rörligt",source:"vattenfall.se",url:"https://www.vattenfall.se/siteassets/1.-privat/villkor/sarskilda-villkor-privat-elkonsumtion.pdf",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:3,name:"E.ON Energilösningar AB",parent:"",product:"Rörligt pris / El till inköpspris / Timpris / Kvartspris",days:30,label:"1 mån (30 dgr)",standard:"EL 2025 K + E.ON villkor",note:"§5.3 och §6.5: 30 dagar. Anvisat avtal och Spotpris med normalpåslag: 14 dagar (§8.4). Gäller från 2026-07-01. Företagskunder: ej kontrollerat.",binding:"Ingen för rörligt",source:"eon.se",url:"https://www.eon.se/content/dam/eon-se/swe-documents/swe-avtalsvillkor-privatkunder-EL-2026.pdf",calc:{t:"d",n:30},verified:true,vdate:"2026-11-11"},
+{rank:4,name:"Göteborg Energi Din El AB",parent:"",product:"Rörligt elpris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + GE villkor",note:"§2d: 1 mån ömsesidig, avgiftsfri. Mix (§4b): uppsägning senast 1 mån före bindningstidens utgång; bindningstidens längd står inte i dokumentet. Anvisat: separat dokument, ej läst (baslinje 14 dagar). Version 6.0, gäller från 2026-03-18.",binding:"Ingen för rörligt",source:"goteborgenergi.se",url:"https://www.goteborgenergi.se/Files/Webb20/Kategoriserad%20information/Informationsmaterial/Avtalsvillkor/Avtalsvillkor_konsument_6.0.pdf",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:5,name:"GodEl i Sverige AB",parent:"",product:"Månadspris / Kvartspris",days:0,label:"Ingen uppsägningstid",standard:"Särskilda villkor 2026-06-01 + Elhandel 2025 K (enl. listsida)",note:"§6: tillsvidare utan uppsägningstid utöver tiden för leverantörsbyte; uppsägning avgiftsfri. Gäller även Anvisat pris. Gäller från 2026-06-01. Vinst går till välgörenhet via stiftelsen GoodCause.",binding:"Ingen",source:"godel.se",url:"https://godel.se/app/uploads/2026/05/godel-i-sverige-abs-sarskilda-villkor-for-avtal-med-konsument-20260601.pdf",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:6,name:"Jämtkraft AB",parent:"",product:"Rörligt pris (månadsmedel)",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K (enl. listsida)",note:"§5: 14 dagar. ⚠ Jämtpris: 3 mån (§6). Takpris: 3 mån (§7). Gäller fr.o.m. 2026-09-01.",binding:"Ingen för rörligt",source:"jamtkraft.se",url:"https://www.jamtkraft.se/wt/documents/555/Avtalsvillkor_-_J%C3%A4mtkraft_konsument.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:7,name:"Bixia AB",parent:"Tekniska verken i Linköping",product:"Bixia Rörligt / Kvartspris",days:14,label:"14 dagar",standard:"EL 2012 K rev 2 + Bixias villkor",note:"§12 (Rörligt) och §13 (Kvartspris): 14 dagar. Bixia Framtid: 14 dagar (§14). Version BEK2506.",binding:"Ingen för rörligt",source:"bixia.se",url:"https://www.bixia.se/sarskilda-avtalsvillkor-konsument",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:8,name:"Skellefteå Kraft AB",parent:"",product:"Rörligt elpris",days:0,label:"Ingen uppsägningstid",standard:"ELHANDEL 2025 K + SK villkor",note:"§8.3: ingen uppsägningstid. Gäller från 2025-11-17. Mikroproduktion (baslinje 30 dagar) står inte i detta dokument.",binding:"Ingen",source:"skekraft.se",url:"https://www.skekraft.se/wp-content/uploads/2026/08/987391_WCAG_Sarskilda-avtalsvillkor-Konsument-2025-11-17.pdf",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:9,name:"Tibber AB",parent:"",product:"Kvartspris (enda produkt)",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K (§1) + Tibbers villkor",note:"OSÄKERT: version 2026:1 (från 2026-06-18) säger emot sig själv. §2.10: ingen uppsägningstid vid byte till annan leverantör eller avslut av nätavtal. §4: 14 dagars ömsesidig uppsägningstid. Baslinjens 14 behålls tills tolkningen avgjorts.",binding:"Ingen",source:"tibber.com",url:"https://tibber.com/se/villkor/elavtalsvillkor",calc:{t:"d",n:14},calcNote:"OSÄKERT: villkoren anger både 14 dagar (§4) och ingen uppsägningstid vid byte till annan elleverantör (§2.10). Räknaren använder 14 dagar.",verified:false,vdate:"2026-11-11"},
+{rank:11,name:"Mälarenergi AB",parent:"",product:"Rörligt månadspris / Dynamiskt elpris",days:30,label:"1 mån",standard:"EL 2012 K rev 2 (enl. dokument) / ELHANDEL 2025 K (enl. listsida)",note:"En månads ömsesidig uppsägningstid, avgiftsfri. ⚠ Förvaltad Elfond: 3 kalendermånader. Giltiga från 2026-06-01.",binding:"Ingen för rent rörligt",source:"malarenergi.se",url:"https://www.malarenergi.se/elavtal/avtalsvillkor-elhandel/malarenergi-abs-elhandelsavtalsvillkor-privatkund/",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:12,name:"Kraftringen Energi AB",parent:"",product:"Rörligt månadspris / Rörligt kvartspris / Opti",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna villkor",note:"§11.2, §11.3, §11.6: 14 dagar för kunden (inte uttryckt som ömsesidig). Anvisat: 14 dagar (§11.8). Reviderade 2026-03-11.",binding:"Ingen för rörligt",source:"kraftringen.se",url:"https://www.kraftringen.se/globalassets/kraftringen/media/dokument-ny-sajt/avtalsvillkor/elhandel/konsument/avtalsvillkor-elforsaljning-keab-konsument-reviderade-2026-03-11.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:13,name:"Nordic Green Energy",parent:"Elmera Group",product:"Månadspris / Timpris",days:14,label:"14 dagar",standard:"EL2025K (§2.1) + NGE villkor",note:"§8.1 (villkor 2026-03-02): uppsägning utan särskild kostnad; uppsägningstid enligt allmänna villkor (14 dagar). ⚠ Från 2027-01-01 överlåts avtalen till Telinet Energi Konsument AB; produktvillkor p. 3.2: utan uppsägningstid (0). ⚠ På Energimarknadsbyrån klagomålslista sedan okt 2024 (vilseledande försäljning, brytavgifter).",binding:"Ingen",source:"nordicgreen.fi",url:"https://www.nordicgreen.fi/wp-content/uploads/sites/2/sarskilda-avtalsvillkor-switch-nordic-green-ab-konsument-2026-03-02.pdf",calc:{t:"d",n:14},calcNote:"14 dagar följer av allmänna villkoren. Från 2027-01-01 ska avtalen gå över till Telinet Energi Konsument AB utan uppsägningstid; räknaren tar inte hänsyn till det.",verified:true,vdate:"2026-11-11"},
+{rank:14,name:"Öresundskraft Marknad AB",parent:"",product:"Rörligt Månadspris / Kvartspris",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"§8: avtal utan bindningstid, uppsägning av båda parter med en månads uppsägningstid. Rörligt kan avslutas utan brytkostnad (§9). Framtidsavtalet (baslinje 12 mån): ej kontrollerat. Gäller från 2024-11-21 (filnamn 260101).",binding:"Ingen för rörligt",source:"oresundskraft.se",url:"https://www.oresundskraft.se/globalassets/pdf/avtalsvillkor-elhandel-konsument/sarskilda-avtalsvillkor-for-leverans-av-el-260101.pdf",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:15,name:"Greenely Premium AB",parent:"",product:"Kvartspris (enda produkt)",days:14,label:"14 dagar",standard:"Egna villkor fr.o.m. 2026-11-05 + EL2012 K (rev)",note:"§10: 14 dagar ömsesidig. Egna villkor gäller fr.o.m. 2026-11-05. Inget rörligt månadspris, inget fastpris. Enbart kvartspris.",binding:"Ingen",source:"greenely.com",url:"https://www.greenely.com/juridisk-information/konsumtionsavtal",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:17,name:"Telinet Energi AB",parent:"Elmera Group (från 2026)",product:"Rörligt förnybart – löpande",days:0,label:"Ingen uppsägningstid",standard:"ELHANDEL 2025 K (§1) + Telinets villkor",note:"§4.a: ingen uppsägningstid för Rörligt förnybart – löpande. Övriga avtalstyper: 1 mån (§3). Gäller fr.o.m. 2026-07-01. Företag 3 mån: ej kontrollerat. Villkor 2027-01-01 gäller Telinet Energi Konsument AB (f.d. Nordic Green-kunder).",binding:"Ingen för löpande rörligt",source:"telinet.se",url:"https://www.telinet.se/wp-content/uploads/2026/06/Allmanna-avtalsvillkor-for-privatpersoner-2026-07-01-skarpa.pdf",calc:{t:"d",n:0},calcNote:"Gäller Rörligt förnybart – löpande. Övriga avtalstyper har 1 månad.",verified:true,vdate:"2026-11-11"},
+{rank:18,name:"Enkla Elbolaget AB",parent:"Dalakraft AB (del av Jämtkraft-koncernen)",product:"Rörligt pris",days:45,label:"Innev. mån + 1 mån",standard:"EL 2012 K rev 2 + egna villkor",note:"EJ VERIFIERBART 2026-11-11: de särskilda villkoren ligger bakom inloggning (Min el). Värdet är baslinjen (§17.2) från maj 2026. Elfonden Relaxa: 12 mån bind + uppsägning (baslinje, ej kontrollerad).",binding:"Ingen för rent rörligt",source:"enklaelbolaget.se",url:"https://www.enklaelbolaget.se/elavtal/avtalsvillkor/",calc:{t:"eom_m",n:1},calcNote:"Räknesättet är baslinjen från maj 2026 (§17.2); villkoren gick inte att kontrollera 2026-11-11.",verified:false,vdate:"2026-05-28",special:"<strong>Teckningsdatum → tidigast möjlig start:</strong><ul style='margin:.4rem 0 0;padding-left:1.2rem'><li>Tecknar du <strong>3 jan</strong> → start <strong>1 mars</strong></li><li>Tecknar du <strong>28 jan</strong> → start <strong>1 mars</strong></li></ul><br>Uppsägningstiden är innevarande månad + 1 kalendermånad (§17.2). Slutdatum samma oavsett dag inom samma månad."},
+{rank:19,name:"Luleå Energi Elhandel AB",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"Till månadsskifte",standard:"EL 2012 K / ELHANDEL 2025 K",note:"§9.1: kan sägas upp av båda parter till kommande månadsskifte – inte ren dagsfrist. Giltiga fr o m 2026-04-21.",binding:"Ingen för rörligt",source:"luleaenergi.se",url:"https://www.luleaenergi.se/media/2x2hn3wr/s%C3%A4rskilda-avtalsvillkor-konsument-2026-04-21.pdf",calc:{t:"eom"},verified:true,vdate:"2026-11-11",special:"<strong>Teckningsdatum → tidigast möjlig start:</strong><ul style='margin:.4rem 0 0;padding-left:1.2rem'><li>Tecknar du <strong>3 jan</strong> → start <strong>1 feb</strong></li><li>Tecknar du <strong>15 jan</strong> → start <strong>1 feb</strong></li><li>Tecknar du <strong>28 jan</strong> → start <strong>1 feb</strong></li></ul><br>Bytet sker vid nästkommande månadsskifte. Kontrollera mot ditt avtal om en minsta frist (t.ex. 14 dgr) också gäller."},
+{rank:20,name:"Umeå Energi Elhandel AB",parent:"",product:"Rörligt Månadspris / Rörligt Kvartspris / Börs-El",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K (enl. listsida) + UEEH villkor",note:"14 dagar enligt dokumentets sammanfattning; §14 anger ingen egen tid. Anvisningsavtal (§16) och Börs-El (§17): 14 dagar. Version 2025:1, gäller från 2025-03-01.",binding:"Ingen för rörligt",source:"umeaenergi.se",url:"https://www.umeaenergi.se/kundservice/ekonomi-och-avtal/avtalsvillkor/elavtal/sarskilda-villkor-for-elhandelsavtal-med-konsumenter-2025-1",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:21,name:"Dalakraft AB",parent:"",product:"Rörligt pris",days:14,label:"14 dagar",standard:"EL2025K (enl. listsida) + egna",note:"14 dagar (§6.2). ⚠ Dala Elfond: innev. mån + 3 kalendermån (§5.2). Version 2026.07K; ”gäller från” ej läst (PDF:ens textlager oläsbart, läst visuellt).",binding:"Ingen",source:"dalakraft.se",url:"https://www.dalakraft.se/wp-content/uploads/2026/07/Dala-Elfond-och-Dalakraft-Rorligt-pris-2026.07K.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:22,name:"Jönköping Energi AB",parent:"",product:"Rörligt månadspris / Kvartspris",days:0,label:"Ingen uppsägningstid",standard:"Elhandel 2025 (enl. listsida) + JEAB villkor",note:"Kunden: gäller tills vidare utan uppsägnings- och bindningstid. JEAB har rätt att avsluta avtalet från innevarande kalendermånad + 1. Mix 50/50 och Fast vinterpris är tidsbundna. Version JESVEK-2025-12, gäller från 2025-12-19.",binding:"Ingen",source:"jonkopingenergi.se",url:"https://jonkopingenergi.se/avtalsvillkor",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:23,name:"Karlstads Energi AB",parent:"",product:"Rörligt Månadspris / Rörligt Spotpris",days:30,label:"1 kalendermån",standard:"EL 2012 K (rev2) + egna villkor",note:"En (1) kalendermånad; avtalet upphör vid närmaste månadsskifte efter en månad från uppsägningen (alltså 1 till knappt 2 mån). Fast månadspris: 14 dagar. Giltiga från 2025-12-16.",binding:"Ingen för rörligt",source:"karlstadsenergi.se",url:"https://karlstadsenergi.se/gemensamt-innehall/kundservice/avtalsvillkor-och-blanketter",calc:{t:"m_eom",n:1},verified:true,vdate:"2026-11-11"},
+{rank:24,name:"Falu Energi & Vatten AB",parent:"",product:"Rörligt pris / Falupriset / Kvartspris",days:21,label:"3 veckor / 1 mån",standard:"EL2025 K + egna villkor",note:"⚠ Rent rörligt månadspris och Kvartspris: 3 veckor (byte kan ske från kommande månadsskifte). Falupriset (mix 80/20) inkl. Kvart/Vinter: 1 mån. Anvisningspris: 14 dagar. Gäller från 2026-02-01.",binding:"Ingen för rörligt",source:"fev.se",url:"https://fev.se/om-oss/avtalsvillkor---alla-samlade.html",calc:{t:"d",n:21},calcNote:"Gäller rent rörligt månadspris och kvartspris (3 veckor). Falupriset har 1 månad och räknas inte här.",verified:true,vdate:"2026-11-11"},
+{rank:26,name:"Borlänge Energi Försäljning AB",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"30 dagar",standard:"EL2025K + egna villkor",note:"Särskilda villkor rev5, gäller från 2026-06-01: 30 dagar. Ingen rev6 i sajtens sitemap.",binding:"Ingen för rörligt",source:"borlange-energi.se",url:"https://www.borlange-energi.se/download/18.3f81fc2119d24bd36c3e161/1775133784467/sarskilda_avtalsvillkor_elhandel_konsument_(rev5).pdf",calc:{t:"d",n:30},verified:true,vdate:"2026-11-11"},
+{rank:27,name:"Varberg Energi",parent:"",product:"Månadspris / Kvartspris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + egna villkor",note:"14 dagar för Månadspris och Kvartspris. ⚠ Trend: 6 kalendermånader. Anvisat pris: 14 dagar. Giltiga från 2026-01-01.",binding:"Ingen för rörligt",source:"varbergenergi.se",url:"https://www.varbergenergi.se/media/bdfes0oo/sarskilda-avtalsvillkor-for-konsumenter_260101_ny.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:28,name:"Kalmar Energi",parent:"",product:"Rörlig el / Kvartspris el",days:30,label:"1 månad",standard:"EL 2012 K (rev 2) + egna villkor",note:"§15: en (1) månads ömsesidig uppsägningstid ”före avtalstidens utgång”. OSÄKERT: lydelsen är oklar för ett avtal som gäller tills vidare (§2). Samma för MIX el. Anvisningsavtal anger ingen tid. Företag tidsbundet: 3 mån (baslinje, ej kontrollerat). Giltiga från 2025-06-10.",binding:"Ingen för rörligt",source:"kalmarenergi.se",url:"https://kalmarenergi.se/app/uploads/2026/10/Kalmar_Energi_Forsaljning_avtalsvillkor_elhandel_K.pdf",calc:{t:"m",n:1},calcNote:"OSÄKERT: lydelsen är en (1) månad ”före avtalstidens utgång”. Räknaren använder 1 kalendermånad från uppsägningsdagen.",verified:false,vdate:"2026-11-11"},
+{rank:29,name:"HEM (Halmstads E&M)",parent:"",product:"Rörligt elpris / Mitt Kvartspris",days:14,label:"14 dagar",standard:"ELHANDEL 2025 K + HEM villkor",note:"§8.4 (Rörligt elpris) och §9.4 (Mitt kvartspris): 14 dagar, avgiftsfri. Förvaltat elpris/Anvisningspris: 14 dagar (§10.3). Gäller från 2025-10-01.",binding:"Ingen för rörligt",source:"hem.se",url:"https://www.hem.se/globalassets/avtal-villkor/elavtal/hem-sarskilda-avtalsvillkor-elhandel-konsument_202510.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:30,name:"Mölndal Energi AB",parent:"",product:"Rörligt månadspris / Kvartspris",days:30,label:"1 mån",standard:"EL 2012 K (rev 2) + egna villkor",note:"§8.4: 1 månads ömsesidig uppsägningstid. Anvisning: 14 dagar (§10.2). Rörligt kan sägas upp kostnadsfritt (§4.2). Fullständiga avtalsvillkor, gäller från 2025-10-01.",binding:"Ingen för rörligt",source:"molndalenergi.se",url:"https://www.molndalenergi.se/avtal-och-villkor/avtalsvillkor-elhandel-2025-10-01",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:31,name:"C4 Energi AB",parent:"Kristianstad",product:"Rörligt månadspris / Rörligt kvartspris / Smartel (löpande)",days:30,label:"1 mån",standard:"ELHANDEL 2025 K (länkad på bolagets sida) + egna villkor",note:"Rörligt månadspris löpande, Rörligt kvartspris löpande och Smartel löpande: rullande löpande med 1 månads uppsägningstid. Tidsbundet: följer avtalsperiodens längd. Särskilda villkor giltiga från 2026-10-15. Gamla länken (villkor 2023-09-22) gav 404; brytkostnaden i den (500 kr + 5 öre/kWh) är inte omkontrollerad.",binding:"Ingen för löpande rörligt",source:"c4energi.se",url:"https://www.c4energi.se/download/18.369569061a12f69b533121/1791807059540/S%C3%A4rskilda%20villkor%20K-giltiga%20fr%C3%A5n%202026-10-15.pdf",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:32,name:"Uddevalla Energi AB",parent:"",product:"Rörligt elpris / Spotpris",days:30,label:"1 mån",standard:"EL 2012 K / ELHANDEL 2025 K",note:"En månads uppsägningstid räknat från närmast kommande månadsskifte (alltså 1 till knappt 2 mån). Kunden kan utan uppsägningstid gå över till fast pris. ⚠ Hybrid: innev. mån + 3 kalendermån. Konsumentvillkor giltiga från 2025-04-23.",binding:"Ingen för rörligt",source:"uddevallaenergi.se",url:"https://www.uddevallaenergi.se/download/18.9e8d9911969f8b5b87d79/1746513656404/UEAB_Elhandel_avtalsvillkor_konsument_2025.pdf",calc:{t:"eom_m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:34,name:"Svealands Elbolag AB",parent:"Elify Energy Group",product:"Rörligt avtalspris",days:0,label:"Ingen uppsägningstid (0 mån)",standard:"ELHANDEL 2025 K + egna",note:"§15.2 (Rörligt Tillsvidarepris Privat): 0 månaders uppsägningstid privat. Lösenavgift endast fastpris (§18). Gäller från 2026-09-01; oklart om det även gäller avtal tecknade före. ⚠ PMD fällde Svealands Elbolag 2026-04-28 (marknadsföringslagen, 2 MSEK vite). Ei tillsyn feb 2024.",binding:"0 mån",source:"svealandselbolag.se",url:"https://www.svealandselbolag.se/avtalsvillkor/",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:35,name:"Karlshamn Energi",parent:"",product:"Rörligt elpris (månad, timme eller kvart)",days:14,label:"14 dagar",standard:"EL 2025 K + egna villkor",note:"Rörligt elpris löper tillsvidare med ömsesidig uppsägningstid 14 dagar, oavsett mätning. ⚠ Mixpris: 1 mån före avtalsperiodens utgång. Fr o m 2026-01-01 (rev. 2026-03-31).",binding:"Ingen för rörligt",source:"karlshamnenergi.se",url:"https://www.karlshamnenergi.se/wp-content/uploads/2026/04/Sarskilda-Avtalsvillkor-Elhandel-KEEAB-260101_rev.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:36,name:"Upplands Energi",parent:"",product:"Rörligt Standard / Rörligt Timme",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + egna villkor",note:"§2 e: en (1) månads ömsesidig uppsägningstid. Anvisat och tillfälligt avtal: 14 dagar (§3 b). Giltiga fr.o.m. 2026-01-01.",binding:"Ingen för rörligt",source:"upplandsenergi.se",url:"https://www.upplandsenergi.se/core/files/Sarskillda%20Avtalsvillkor%20privat_26_01.pdf",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:37,name:"Linde Energi",parent:"",product:"Linde Rörligt / Linde Rörligt Flex",days:30,label:"1 mån",standard:"ELHANDEL 2025 K (enl. listsida) + egna villkor",note:"Ömsesidig uppsägningstid en månad. ⚠ Linde Smart (förvaltat): tre månader. Villkor giltiga från 2026-10-05.",binding:"Ingen för rörligt",source:"lindeenergi.se",url:"https://www.lindeenergi.se/download/18.1bcf301f1a12f44e2f59d38/1792409450505/Avtalsvillkor%20Linde%20energi%20konsumenter%202601005.pdf",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
+{rank:38,name:"Bodens Energi AB",parent:"",product:"Rörligt elpris (månadspris / kvartspris)",days:14,label:"14 dagar",standard:"Bodens Energi + ELHANDEL 2025 K (enl. listsida)",note:"§11b (Månadspris), §9b (Kvartspris), §7b (anvisat): 14 dagars uppsägningstid. Sidhuvud ”Reviderad 2026-04-01”, filnamn 2026-06-01. Näringsidkare (baslinje 1 mån): ej kontrollerat.",binding:"Ingen för privat rörligt",source:"bodensenergi.se",url:"https://bodensenergi.se/media/fpabqcij/sarskilda-avtalsvillkor-elhandel-2026-06-01-rorligt-elpris-manadspris.pdf",calc:{t:"d",n:14},verified:true,vdate:"2026-11-11"},
+{rank:40,name:"Tranås Energi AB",parent:"",product:"Rörligt pris / Kvartspris",days:14,label:"14 dagar (allm. villkor)",standard:"EL 2012K (rev2) + egna villkor",note:"OSÄKERT: särskilda villkor rev 2025-12-18 anger ingen uppsägningstid för rörligt. 14 dagar följer av allmänna villkoren, inte av bolagets text. Schysst pris är tidsbundet; bindningstidens längd står inte i dokumentet.",binding:"Ingen för rörligt",source:"tranasenergi.se",url:"https://tranasenergi.se/wp-content/uploads/2025/12/Sarskilda-avtalsvillkor-konsument-rev-2025-12-18.pdf",calc:{t:"d",n:14},calcNote:"14 dagar följer av allmänna villkoren; bolagets egna villkor anger ingen tid.",verified:false,vdate:"2026-11-11"},
+{rank:41,name:"Motala Energi AB",parent:"Elify Energy Group",product:"Rörligt elpris / Rörligt kvartsmätt elpris",days:0,label:"Ingen uppsägningstid (0 mån)",standard:"ELHANDEL 2025 K + egna",note:"§15.2: 0 månaders uppsägningstid privat. Ingen brytavgift för rörligt i gällande text; lösenavgift endast fastpris (§17). Gäller från 2026-09-01. Ei tillsyn 2025-02-20.",binding:"0 mån",source:"motalaenergi.se",url:"https://motalaenergi.se/avtalsvillkor/",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:42,name:"Bjäre Kraft",parent:"",product:"Rörligt elpris",days:15,label:"15 dagar",standard:"ELHANDEL 2025 K (enl. listsida) + egna villkor",note:"§3.9: rörligt eller anvisat elpris löper tillsvidare med ömsesidig uppsägningstid 15 dagar. Version 2020-11-23. Separat anvisningsdokument (Ver 2026-07-10) anger ingen tid.",binding:"Ingen för rörligt",source:"bjarekraft.se",url:"https://www.bjarekraft.se/images/uploads/documents_and_forms/S%C3%A4rskilda-villkor-elhandel-201123.pdf",calc:{t:"d",n:15},verified:true,vdate:"2026-11-11"},
+{rank:43,name:"Östra Kinds Elkraft",parent:"",product:"Rörligt pris / Kvartspris",days:30,label:"1 mån",standard:"Östra Kinds + branschvillkor",note:"Verifierad: 1 mån ömsesidig uppsägningstid (§10c särskilda villkor).",binding:"Ingen för rörligt",source:"ostrakindselkraft.se",url:"https://www.ostrakindselkraft.se/wp-content/uploads/2021/01/ostra-Kinds-Elkrafts-sarskilda-avtalsvillkor-privatkund.pdf",calc:{t:"m",n:1},calcNote:"Raden är inte omkontrollerad sedan maj 2026.",verified:true,vdate:"2026-05-27"},
+{rank:44,name:"Skövde Energi AB",parent:"Via Billinge Energi AB",product:"Rörligt elpris / Spotpris (Billinge Energi)",days:15,label:"15 dagar",standard:"ELHANDEL 2025 K",note:"Modul D, D.2: 15 dagars uppsägningstid (Rörligt elpris och Spotpris). Avtalsvillkor v.2026.1, gäller från 2026-01-01. Kopplingen Skövde Energi → Billinge Energi är inte bekräftad i villkorstexten.",binding:"Ingen för rörligt",source:"billingeenergi.se",url:"https://www.billingeenergi.se/kundtjanst/vara-avtalsvillkor-blanketter/",calc:{t:"d",n:15},verified:true,vdate:"2026-11-11"},
+{rank:45,name:"Herrljunga Elektriska AB",parent:"Via Herrljunga Kraft / Billinge",product:"Rörligt elpris",days:15,label:"15 dagar",standard:"ELHANDEL 2025 K + v.2026.1",note:"Modul D, D.2: 15 dagars uppsägningstid. Version v.2026.1, gäller från 2026-01-01.",binding:"Ingen för rörligt",source:"herrljunga-kraft.se",url:"https://www.herrljunga-kraft.se/content/uploads/2025/12/Herrljunga-Rorligt-elpris-korr-villkor.pdf",calc:{t:"d",n:15},verified:true,vdate:"2026-11-11"},
+{rank:46,name:"Cheap Energy AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:0,label:"Ingen uppsägningstid (0 mån)",standard:"ELHANDEL 2025 K + egna",note:"De rörliga avtalen tecknas med 0 månaders bindningstid och 0 månaders uppsägningstid för privatkunder. Gäller från 2026-09-01. Gamla länken (villkor 2023-04-01) omdirigeras till nuvarande sida. ⚠ PMD fällde Cheap Energy 2026-04-28 (marknadsföringslagen, 2 MSEK vite).",binding:"0 mån",source:"cheapenergy.se",url:"https://www.cheapenergy.se/avtalsvillkor/",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:47,name:"Stockholms Elbolag AB",parent:"Elify Energy Group",product:"Rörligt pris / Spotpris Tim / Spotpris Kvart",days:0,label:"Ingen uppsägningstid (0 mån)",standard:"ELHANDEL 2025 K + egna",note:"§15.2: 0 månaders uppsägningstid privat (bl.a. Frihet Rörligt elprisavtal). Villkor gäller från 2026-09-01. ⚠ PMD fällde Stockholms Elbolag 2026-04-28 (marknadsföringslagen, 2 MSEK vite).",binding:"0 mån",source:"stockholmselbolag.se",url:"https://www.stockholmselbolag.se/avtalsvillkor/",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:48,name:"Svekraft AB",parent:"Elify Energy Group",product:"Rörligt avtalspris / Timpris",days:0,label:"Ingen uppsägningstid (0 mån)",standard:"ELHANDEL 2025 K + egna",note:"De rörliga avtalen tecknas med 0 månaders bindningstid och 0 månaders uppsägningstid för privatkunder och företagskunder. Tillsvidare avtal Privat: 0 månads uppsägning. Gäller från 2026-09-01. Länken pekade tidigare på kortversionen (avtalsvillkor-kort).",binding:"0 mån",source:"svekraft.com",url:"https://www.svekraft.com/avtalsvillkor/",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:49,name:"BestEl",parent:"",product:"Rörligt elpris",days:30,label:"30 dagar",standard:"ELHANDEL 2025 K (§6) + BestEl villkor 2026-2",note:"§2: uppsägningstid 30 dagar, bryttidpunkt efter överenskommelse till lämpligt månadsskifte. Version 2026-2, gäller från 2026-05-01 (Word-fil).",binding:"Ingen för rörligt",source:"bestel.se",url:"https://www.bestel.se/wp-content/uploads/2026/04/BestEl-sarskilda-villkor-2026-2.docx",calc:{t:"d_eom",n:30},calcNote:"Brytpunkten sätts enligt villkoren efter överenskommelse till lämpligt månadsskifte; räknaren visar närmaste månadsskifte efter de 30 dagarna.",verified:true,vdate:"2026-11-11"},
+{rank:50,name:"Nordic Best Energi",parent:"",product:"Rörligt löpande / Mix-avtal",days:30,label:"1 mån",standard:"Allmänna avtalsvillkor + egna",note:"Produktspecifika villkor: 30 dagar från uppsägningsdagen. Avbrytande i förtid p. 2: Förvaltat/Rörligt löpande en (1) månad före avtalstidens utgång – diskrepansen 30 dagar / 1 mån kvarstår. Avgiftsfri uppsägning uttryckligen bara för Mix-avtal. Inget versionsdatum i dokumentet.",binding:"Ingen för rörligt löpande",source:"nordicbestenergi.se",url:"https://www.nordicbestenergi.se/_files/ugd/c3b6f9_287d2840c86d44df80b04a5bb94765ba.pdf",calc:{t:"dm"},calcNote:"Villkoren anger både 30 dagar och en (1) månad; räknaren använder det senare av de två.",verified:true,vdate:"2026-11-11"},
+{rank:51,name:"Svea Solar Park Energy AB",parent:"",product:"Månadspris / Kvartspris (Sunbeam)",days:30,label:"30 dagar",standard:"Elhandel 2025 K + egna villkor",note:"§10.1: 30 dagars ömsesidig uppsägningstid. Gäller från 2026-03-06. Produkter: månadspotpris (§6.1), kvartspris (§6.2). Dokumentets bolagsnamn är Svea Solar Renewable Solar AB (namnmatchning OSÄKER). Fast elpris: lösenavgift 10 öre/kWh + 400 kr (baslinje, ej omkontrollerad).",binding:"Ingen för rörligt",source:"sveasolar.se",url:"https://svea-solar-cms-storage-prod.s3.amazonaws.com/documents/Svea_Solars_sarskilda_villkor_for_Sunbeam_ink._Elavtal_for_avtal_med_konsument.pdf",calc:{t:"d",n:30},verified:true,vdate:"2026-11-11"},
+{rank:52,name:"Storuman Energi AB",parent:"",product:"Rörligt spot / Tillsvidarepris",days:14,label:"14 dgr → månadsskifte",standard:"EL 2012 K rev 2 + egna villkor",note:"§8: avtalet löper tillsvidare och upphör vid månadsskifte närmast efter 14 dagar. Version 1.21.3, giltig fr.o.m. 2024-11-01. OSÄKERT: kodning – 14 dagar plus tid till månadsskifte. Elmix: 12/24/36 mån bindningstid + lösenavgift.",binding:"Ingen för rörligt spot",source:"storumanenergi.se",url:"https://storumanenergi.se/media/iwfljre2/avtalsvillkor_1213_konsument.pdf",calc:{t:"d_eom",n:14},verified:true,vdate:"2026-11-11",special:"<strong>Hela året – när startar nytt avtal?</strong><br><span style=\"font-size:.78rem;color:var(--text-dim)\">Avtalet upphör vid månadsskiftet närmast efter 14 dagar. Brytdatumet (sista dag för start vid nästa månadsskifte) varierar med månadens längd.</span><div style=\"overflow-x:auto\"><table class=\"year-table\"><tr><th>Tecknar i</th><th>Start</th><th>om du tecknar</th><th>Annars start</th><th>om du tecknar</th></tr><tr><td>Januari</td><td class=\"start-now\">1 feb</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 mars</td><td>fr.o.m. 18:e</td></tr><tr><td>Februari</td><td class=\"start-now\">1 mars</td><td>t.o.m. 14:e</td><td class=\"start-late\">1 apr</td><td>fr.o.m. 15:e</td></tr><tr><td>Mars</td><td class=\"start-now\">1 apr</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 maj</td><td>fr.o.m. 18:e</td></tr><tr><td>April</td><td class=\"start-now\">1 maj</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 jun</td><td>fr.o.m. 17:e</td></tr><tr><td>Maj</td><td class=\"start-now\">1 jun</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 jul</td><td>fr.o.m. 18:e</td></tr><tr><td>Juni</td><td class=\"start-now\">1 jul</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 aug</td><td>fr.o.m. 17:e</td></tr><tr><td>Juli</td><td class=\"start-now\">1 aug</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 sep</td><td>fr.o.m. 18:e</td></tr><tr><td>Augusti</td><td class=\"start-now\">1 sep</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 okt</td><td>fr.o.m. 18:e</td></tr><tr><td>September</td><td class=\"start-now\">1 okt</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 nov</td><td>fr.o.m. 17:e</td></tr><tr><td>Oktober</td><td class=\"start-now\">1 nov</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 dec</td><td>fr.o.m. 18:e</td></tr><tr><td>November</td><td class=\"start-now\">1 dec</td><td>t.o.m. 16:e</td><td class=\"start-late\">1 jan</td><td>fr.o.m. 17:e</td></tr><tr><td>December</td><td class=\"start-now\">1 jan</td><td>t.o.m. 17:e</td><td class=\"start-late\">1 feb</td><td>fr.o.m. 18:e</td></tr></table></div><span style=\"font-size:.78rem;color:var(--text-dim)\">Skottår: februari brytdatum blir 15:e i stället för 14:e.</span>"},
+{rank:53,name:"Rebel Elhandel AB",alias:"Rebel El",parent:"",product:"Rörligt (månadsmedel) / Timpris",days:0,label:"Ingen uppsägningstid",standard:"Egna villkor; allmänna villkor ej namngivna (hänvisar till Energimarknadsbyråns branschvillkor)",note:"”Rebel erbjuder enbart rörliga avtal utan bindningstider och utan uppsägningstid.” Rubrik Uppsägningstider och bindningstider (onumrerat). Versionsdatum saknas på sidan. Nytt i listan 2026-11-11 – placering efter storlek ej fastställd.",binding:"Ingen",source:"renenkelbilligel.se",url:"https://www.renenkelbilligel.se/villkor",calc:{t:"d",n:0},verified:true,vdate:"2026-11-11"},
+{rank:54,name:"katshing Energy AB",alias:"Katshing",parent:"",product:"Rörligt Månadspris / Kvartspris",days:30,label:"1 mån",standard:"ELHANDEL 2025 K + katshings villkor",note:"§9: rörligt energipris gäller tills vidare med en månads ömsesidig uppsägningstid; uppsägning avgiftsfri. Vinterskyddet (§6) är en villkorad rabatt via mobilabonnemang hos Mobelia och påverkar inte uppsägningstiden. Versionsdatum saknas på sidan. Nytt i listan 2026-11-11 – placering efter storlek ej fastställd.",binding:"Ingen",source:"katshing.com",url:"https://www.katshing.com/allmanna-villkor-el",calc:{t:"m",n:1},verified:true,vdate:"2026-11-11"},
 ];
 
-function getPillClass(d){if(d<=14)return'green';if(d<=31)return'blue';if(d<=60)return'yellow';return'red'}
+// Gränser i dagar: t.o.m. FLEX_MAX = flexibel, t.o.m. STD_MAX = ~1 månad, däröver = över 1 månad
+var FLEX_MAX=21,STD_MAX=31;
+function getPillClass(d){if(d<=FLEX_MAX)return'green';if(d<=STD_MAX)return'blue';return'yellow'}
 function getCatHtml(d){
-  if(d<=14)return'<span style="color:var(--good);font-size:.82rem">✦ Flexibel</span>';
-  if(d<=31)return'<span style="color:var(--text-muted);font-size:.82rem">Standard</span>';
-  if(d<=60)return'<span style="color:var(--warn);font-size:.82rem">Förhöjd</span>';
-  return'<span style="color:var(--danger);font-size:.82rem">⚠ Lång</span>';
+if(d<=FLEX_MAX)return'<span style="color:var(--good);font-size:.82rem">✦ Flexibel</span>';
+if(d<=STD_MAX)return'<span style="color:var(--text-muted);font-size:.82rem">Standard</span>';
+return'<span style="color:var(--warn);font-size:.82rem">Förhöjd</span>';
+}
+
+// ── Startdatumräknare ──
+// START_OFFSET = 1: uppsägningstiden räknas från dagen efter uppsägningen och
+// nytt avtal startar dagen efter uppsägningstidens sista dag. Sätt 0 om starten
+// ska ligga på samma dag som uppsägningstiden löper ut.
+var START_OFFSET=1;
+var WEEKDAYS=['söndag','måndag','tisdag','onsdag','torsdag','fredag','lördag'];
+var MONTHS=['januari','februari','mars','april','maj','juni','juli','augusti','september','oktober','november','december'];
+function pad2(n){return n<10?'0'+n:''+n}
+function toISO(d){return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate())}
+function parseISO(s){
+var m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(s||'');
+if(!m||+m[1]<2000)return null;
+var d=new Date(+m[1],+m[2]-1,+m[3]);
+return(d.getMonth()===+m[2]-1&&d.getDate()===+m[3])?d:null;
+}
+function addDays(d,n){return new Date(d.getFullYear(),d.getMonth(),d.getDate()+n)}
+// Kalendermånader; 31 jan + 1 mån = sista februari
+function addMonths(d,n){var y=d.getFullYear(),m=d.getMonth()+n,last=new Date(y,m+1,0).getDate();return new Date(y,m,Math.min(d.getDate(),last))}
+function firstOfMonth(d,n){return new Date(d.getFullYear(),d.getMonth()+n,1)}
+function fmtDate(d){return toISO(d)+' · '+WEEKDAYS[d.getDay()]+' '+d.getDate()+' '+MONTHS[d.getMonth()]}
+// Räknar ut när uppsägningstiden löper ut (end) och tidigast start för nytt avtal (start)
+function calcStart(c,D){
+var end,start,how,x;
+if(c.t==='d'){
+if(c.n===0){end=null;start=addDays(D,START_OFFSET);how='Ingen uppsägningstid: nytt avtal kan starta dagen efter uppsägningen.'}
+else{end=addDays(D,c.n);start=addDays(end,START_OFFSET);how=c.n+' dagar räknat från dagen efter uppsägningen.'}
+}else if(c.t==='m'){
+end=addMonths(D,c.n);start=addDays(end,START_OFFSET);how='1 kalendermånad räknat från uppsägningsdagen.';
+}else if(c.t==='dm'){
+var a=addDays(D,30),b=addMonths(D,1);end=a>b?a:b;start=addDays(end,START_OFFSET);how='Det senare av 30 dagar och 1 kalendermånad.';
+}else if(c.t==='eom'){
+start=firstOfMonth(D,1);end=addDays(start,-1);how='Avtalet upphör vid närmast kommande månadsskifte.';
+}else if(c.t==='d_eom'){
+x=addDays(D,c.n);start=firstOfMonth(x,1);end=addDays(start,-1);how=c.n+' dagar (t.o.m. '+toISO(x)+'), därefter till närmaste månadsskifte.';
+}else if(c.t==='m_eom'){
+x=addMonths(D,c.n);start=firstOfMonth(x,1);end=addDays(start,-1);how='1 kalendermånad (t.o.m. '+toISO(x)+'), därefter till närmaste månadsskifte.';
+}else if(c.t==='eom_m'){
+start=firstOfMonth(D,1+c.n);end=addDays(start,-1);how='Innevarande månad plus 1 kalendermånad.';
+}
+return{end:end,start:start,how:how};
+}
+function calcHtml(d){
+var D=parseISO(calcDate);
+if(!D)return'<p class="calc-how">Ange ett giltigt datum.</p>';
+var r=calcStart(d.calc,D);
+return'<div class="calc-res">'+
+'<div><span class="calc-k">Uppsägningstiden löper ut</span><span class="calc-v">'+(r.end?fmtDate(r.end):'Ingen uppsägningstid')+'</span></div>'+
+'<div><span class="calc-k">Tidigast start för nytt avtal</span><span class="calc-v calc-start">'+fmtDate(r.start)+'</span></div>'+
+'</div>'+
+'<p class="calc-how"><strong>Räknesätt:</strong> '+r.how+(d.calcNote?' '+d.calcNote:'')+'</p>'+
+(d.verified===false?'<p class="calc-warn">† Uppsägningstiden är inte fullt verifierad – se noteringen.</p>':'')+
+'<p class="calc-how">Gäller uppsägningstiden för rent rörligt avtal, räknat från att uppsägningen görs det valda datumet. Förvaltade, mixade och bundna avtal har andra tider. Tiden för själva leverantörsbytet ingår inte. Kontrollera alltid mot kundens avtal.</p>';
+}
+function setCalcDate(v,src){
+calcDate=v;
+var byRank={};DATA.forEach(function(d){byRank[d.rank]=d});
+if(parseISO(v))document.querySelectorAll('.calc-date').forEach(function(i){if(i!==src)i.value=v});
+document.querySelectorAll('.calc-out').forEach(function(o){o.innerHTML=calcHtml(byRank[o.dataset.rank])});
 }
 
 function renderStats(list){
-  var a=list;
-  var f=a.filter(function(d){return d.days<=14}).length;
-  var s=a.filter(function(d){return d.days>14&&d.days<=31}).length;
-  var l=a.filter(function(d){return d.days>31}).length;
-  var avg=a.length?Math.round(a.reduce(function(s,d){return s+d.days},0)/a.length):0;
-  document.getElementById('stats').innerHTML=
-    '<div class="stat-card green"><div class="label">Max flexibla</div><div class="value">'+f+'</div><div class="sub">0–14 dagars uppsägning</div></div>'+
-    '<div class="stat-card blue"><div class="label">Branschstandard</div><div class="value">'+s+'</div><div class="sub">~1 månads uppsägning</div></div>'+
-    '<div class="stat-card red"><div class="label">Längre än 1 mån</div><div class="value">'+l+'</div><div class="sub">2–3+ mån uppsägning</div></div>'+
-    '<div class="stat-card accent"><div class="label">Genomsnitt</div><div class="value">'+avg+' dgr</div><div class="sub">Aktiva bolag (rörligt)</div></div>';
+var a=list;
+var f=a.filter(function(d){return d.days<=FLEX_MAX}).length;
+var s=a.filter(function(d){return d.days>FLEX_MAX&&d.days<=STD_MAX}).length;
+var l=a.filter(function(d){return d.days>STD_MAX}).length;
+var avg=a.length?Math.round(a.reduce(function(s,d){return s+d.days},0)/a.length):0;
+document.getElementById('stats').innerHTML=
+'<div class="stat-card green"><div class="label">Flexibla</div><div class="value">'+f+'</div><div class="sub">0–'+FLEX_MAX+' dagars uppsägning</div></div>'+
+'<div class="stat-card blue"><div class="label">Branschstandard</div><div class="value">'+s+'</div><div class="sub">~1 månads uppsägning</div></div>'+
+'<div class="stat-card red"><div class="label">Längre än 1 mån</div><div class="value">'+l+'</div><div class="sub">Över '+STD_MAX+' dagars uppsägning</div></div>'+
+'<div class="stat-card accent"><div class="label">Genomsnitt</div><div class="value">'+avg+' dgr</div><div class="sub">Aktiva bolag (rörligt)</div></div>';
 }
 
 function renderTable(data){
-  var tb=document.getElementById('tbody');
-  if(!data.length){tb.innerHTML='';document.getElementById('noResults').style.display='flex';return}
-  document.getElementById('noResults').style.display='none';
-  var h='';
-  for(var i=0;i<data.length;i++){
-    var d=data[i],pc=getPillClass(d.days);
-    var uv=d.verified===false?'<span style="color:var(--warn);font-size:.7rem;margin-left:.35rem" title="Ej fullt verifierad">†</span>':'';
-    h+='<tr class="expandable" tabindex="0" role="button" aria-expanded="false" aria-controls="detail-row-'+d.rank+'" data-idx="'+d.rank+'">'+
-      '<td style="color:var(--text-muted);font-size:.78rem">'+(i+1)+'</td>'+
-      '<td class="company">'+d.name+uv+(d.parent?'<span class="parent">'+d.parent+'</span>':'')+'</td>'+
-      '<td class="product">'+d.product+'</td>'+
-      '<td class="days"><span class="pill '+pc+'">'+d.label+'</span></td>'+
-      '<td>'+getCatHtml(d.days)+'</td>'+
-      '<td class="note">'+d.note+(d.special?' <span class="lasmer">Läs mer ↓</span>':'')+'</td>'+
-      '</tr>'+
-      '<tr class="detail-row" id="detail-row-'+d.rank+'" role="region" aria-label="Detaljer för '+d.name+'"><td colspan="6"><div class="detail-content"><div class="detail-grid">'+
-      '<dl class="detail-item"><dt class="dt">Uppsägningstid</dt><dd class="dd">'+d.label+'</dd></dl>'+
-      '<dl class="detail-item"><dt class="dt">Bindningstid (rörligt)</dt><dd class="dd">'+d.binding+'</dd></dl>'+
-      '<dl class="detail-item"><dt class="dt">Villkorsstandard</dt><dd class="dd">'+d.standard+'</dd></dl>'+
-      '<dl class="detail-item"><dt class="dt">Avtalsvillkor</dt><dd class="dd">'+(d.url?'<a href="'+d.url+'" target="_blank" rel="noopener" class="villkor-link">Öppna villkor hos '+d.source+' ↗</a>':'—')+'</dd></dl>'+
-      '<dl class="detail-item"><dt class="dt">Senast verifierad</dt><dd class="dd">'+(d.vdate||'Okänt')+'</dd></dl>'+
-      (d.note?'<dl class="detail-item" style="grid-column:1/-1"><dt class="dt">Notering</dt><dd class="dd">'+d.note+'</dd></dl>':'')+
-      (d.special?'<dl class="detail-item special-box" style="grid-column:1/-1"><dt class="dt" style="color:var(--danger)">⚠ När ska du teckna nytt avtal? (datumberoende)</dt><dd class="dd special-text">'+d.special+'</dd></dl>':'')+
-      '</div></div></td></tr>';
-  }
-  tb.innerHTML=h;
+var tb=document.getElementById('tbody');
+if(!data.length){tb.innerHTML='';document.getElementById('noResults').style.display='flex';return}
+document.getElementById('noResults').style.display='none';
+var h='';
+for(var i=0;i<data.length;i++){
+var d=data[i],pc=getPillClass(d.days);
+var uv=d.verified===false?'<span style="color:var(--warn);font-size:.7rem;margin-left:.35rem" title="Ej fullt verifierad">†</span>':'';
+h+='<tr class="expandable" tabindex="0" role="button" aria-expanded="false" aria-controls="detail-row-'+d.rank+'" data-idx="'+d.rank+'">'+
+'<td style="color:var(--text-muted);font-size:.78rem">'+(i+1)+'</td>'+
+'<td class="company">'+d.name+uv+(d.parent?'<span class="parent">'+d.parent+'</span>':'')+'</td>'+
+'<td class="product">'+d.product+'</td>'+
+'<td class="days"><span class="pill '+pc+'">'+d.label+'</span></td>'+
+'<td>'+getCatHtml(d.days)+'</td>'+
+'<td class="note">'+d.note+(d.special?' <span class="lasmer">Läs mer ↓</span>':'')+'</td>'+
+'</tr>'+
+'<tr class="detail-row" id="detail-row-'+d.rank+'" role="region"><td colspan="6"><div class="detail-content"><div class="detail-grid">'+
+'<div class="detail-item calc-box" style="grid-column:1/-1">'+
+'<div class="dt">Räkna ut tidigast startdatum</div>'+
+'<div class="calc-row"><label for="calc-date-'+d.rank+'">Uppsägningsdatum</label>'+
+'<input type="date" class="calc-date" id="calc-date-'+d.rank+'" value="'+calcDate+'">'+
+'<button type="button" class="calc-today">Idag</button></div>'+
+'<div class="calc-out" data-rank="'+d.rank+'">'+calcHtml(d)+'</div>'+
+'</div>'+
+'<dl class="detail-item"><dt class="dt">Uppsägningstid</dt><dd class="dd">'+d.label+'</dd></dl>'+
+'<dl class="detail-item"><dt class="dt">Bindningstid (rörligt)</dt><dd class="dd">'+d.binding+'</dd></dl>'+
+'<dl class="detail-item"><dt class="dt">Villkorsstandard</dt><dd class="dd">'+d.standard+'</dd></dl>'+
+'<dl class="detail-item"><dt class="dt">Avtalsvillkor</dt><dd class="dd">'+(d.url?'<a href="'+d.url+'" target="_blank" rel="noopener" class="villkor-link">Öppna villkor hos '+d.source+' ↗</a>':'—')+'</dd></dl>'+
+'<dl class="detail-item"><dt class="dt">Senast verifierad</dt><dd class="dd">'+(d.vdate||'Okänt')+'</dd></dl>'+
+(d.note?'<dl class="detail-item" style="grid-column:1/-1"><dt class="dt">Notering</dt><dd class="dd">'+d.note+'</dd></dl>':'')+
+(d.special?'<dl class="detail-item special-box" style="grid-column:1/-1"><dt class="dt" style="color:var(--danger)">⚠ När ska du teckna nytt avtal? (datumberoende)</dt><dd class="dd special-text">'+d.special+'</dd></dl>':'')+
+'</div></div></td></tr>';
+}
+tb.innerHTML=h;
+// Behåll öppen rad efter sök, filter och sortering (utan att spela animationen igen)
+if(openRank!==null){
+var openTr=tb.querySelector('tr.expandable[data-idx="'+openRank+'"]');
+if(openTr){
+openTr.setAttribute('aria-expanded','true');
+document.getElementById('detail-row-'+openRank).classList.add('open','noanim');
+}
+}
 }
 
 function toggleRow(tr){
-  var det=document.getElementById('detail-row-'+tr.dataset.idx);
-  var isOpen=det.classList.contains('open');
-  if(isOpen){
-    det.classList.remove('open');
-    tr.setAttribute('aria-expanded','false');
-  }else{
-    document.querySelectorAll('.detail-row.open').forEach(function(row){
-      row.classList.remove('open');
-      var prevTr=document.querySelector('tr.expandable[data-idx="'+row.id.replace('detail-row-','')+'"]');
-      if(prevTr)prevTr.setAttribute('aria-expanded','false');
-    });
-    det.classList.add('open');
-    tr.setAttribute('aria-expanded','true');
-  }
+var rank=tr.dataset.idx;
+var det=document.getElementById('detail-row-'+rank);
+var prev=document.querySelector('.detail-row.open');
+if(prev){
+prev.classList.remove('open','noanim');
+var prevTr=document.querySelector('tr.expandable[aria-expanded="true"]');
+if(prevTr)prevTr.setAttribute('aria-expanded','false');
+}
+if(prev===det){openRank=null;return}
+det.classList.add('open');
+tr.setAttribute('aria-expanded','true');
+openRank=rank;
 }
 
 document.getElementById('tbody').addEventListener('click',function(e){
-  if(e.target.closest('a'))return;
-  var tr=e.target.closest('tr.expandable');
-  if(tr)toggleRow(tr);
+if(e.target.closest('a'))return;
+if(e.target.closest('.calc-today')){setCalcDate(toISO(new Date()),null);return}
+var tr=e.target.closest('tr.expandable');
+if(tr)toggleRow(tr);
+});
+
+document.getElementById('tbody').addEventListener('input',function(e){
+if(e.target.classList.contains('calc-date'))setCalcDate(e.target.value,e.target);
 });
 
 document.getElementById('tbody').addEventListener('keydown',function(e){
-  if(e.key==='Enter'||e.key===' '){
-    var tr=e.target.closest('tr.expandable');
-    if(tr){e.preventDefault();toggleRow(tr)}
-  }
+if(e.key==='Enter'||e.key===' '){
+var tr=e.target.closest('tr.expandable');
+if(tr){e.preventDefault();toggleRow(tr)}
+}
 });
 
-var currentFilter='all',currentSort='rank-asc',currentSearch='';
+var currentFilter='all',currentSort='rank-asc',currentSearch='',openRank=null,calcDate=toISO(new Date());
 
 function getFiltered(){
-  var list=DATA.slice();
-  if(currentSearch){var q=currentSearch.toLowerCase();list=list.filter(function(d){return(d.name+' '+d.product+' '+d.parent+' '+d.note).toLowerCase().indexOf(q)>=0})}
-  if(currentFilter==='0-14')list=list.filter(function(d){return d.days<=14});
-  else if(currentFilter==='30')list=list.filter(function(d){return d.days>14&&d.days<=31});
-  else if(currentFilter==='60')list=list.filter(function(d){return d.days>31&&d.days<=60});
-  else if(currentFilter==='90+')list=list.filter(function(d){return d.days>=61});
-  var p=currentSort.split('-'),k=p[0],dir=p[1];
-  list.sort(function(a,b){
-    var va,vb;
-    if(k==='rank'){va=a.rank;vb=b.rank}
-    else if(k==='days'){va=a.days;vb=b.days}
-    else{va=a.name.toLowerCase();vb=b.name.toLowerCase()}
-    if(va<vb)return dir==='asc'?-1:1;
-    if(va>vb)return dir==='asc'?1:-1;
-    return 0;
-  });
-  return list;
+var list=DATA.slice();
+var q=currentSearch.trim().toLowerCase();
+if(q){list=list.filter(function(d){return(d.name+' '+(d.alias||'')+' '+d.parent+' '+d.product+' '+d.label+' '+d.standard+' '+d.note).toLowerCase().indexOf(q)>=0})}
+if(currentFilter==='flex')list=list.filter(function(d){return d.days<=FLEX_MAX});
+else if(currentFilter==='std')list=list.filter(function(d){return d.days>FLEX_MAX&&d.days<=STD_MAX});
+else if(currentFilter==='long')list=list.filter(function(d){return d.days>STD_MAX});
+var p=currentSort.split('-'),k=p[0],dir=p[1];
+list.sort(function(a,b){
+var c;
+if(k==='name')c=a.name.localeCompare(b.name,'sv');
+else if(k==='days')c=a.days-b.days;
+else c=a.rank-b.rank;
+if(c===0)return a.rank-b.rank;
+return dir==='asc'?c:-c;
+});
+return list;
 }
 
 function updateHeaderArrows(){
-  document.querySelectorAll('thead th[data-sort]').forEach(function(th){
-    var key=th.dataset.sort;
-    var p=currentSort.split('-');
-    var arrow=th.querySelector('.sort-arrow');
-    if(p[0]===key){th.classList.add('sorted');arrow.textContent=p[1]==='asc'?' ↑':' ↓'}
-    else{th.classList.remove('sorted');arrow.textContent=''}
-  });
+document.querySelectorAll('thead th[data-sort]').forEach(function(th){
+var key=th.dataset.sort;
+var p=currentSort.split('-');
+var arrow=th.querySelector('.sort-arrow');
+if(p[0]===key){th.classList.add('sorted');arrow.textContent=p[1]==='asc'?' ↑':' ↓'}
+else{th.classList.remove('sorted');arrow.textContent=''}
+});
 }
 
 function update(){var f=getFiltered();renderStats(f);renderTable(f);updateHeaderArrows()}
@@ -392,36 +482,33 @@ document.getElementById('searchClear').addEventListener('click',function(){searc
 document.querySelectorAll('.filter-btn').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.filter-btn').forEach(function(x){x.classList.remove('active')});b.classList.add('active');currentFilter=b.dataset.filter;update()})});
 document.getElementById('sortSelect').addEventListener('change',function(e){currentSort=e.target.value;update()});
 document.querySelectorAll('thead th[data-sort]').forEach(function(th){
-  th.addEventListener('click',function(){
-    var key=th.dataset.sort;
-    var p=currentSort.split('-');
-    if(p[0]===key){currentSort=key+'-'+(p[1]==='asc'?'desc':'asc')}
-    else{currentSort=key+'-asc'}
-    document.getElementById('sortSelect').value=currentSort;
-    update();
-  });
+th.addEventListener('click',function(){
+var key=th.dataset.sort;
+var p=currentSort.split('-');
+if(p[0]===key){currentSort=key+'-'+(p[1]==='asc'?'desc':'asc')}
+else{currentSort=key+'-asc'}
+document.getElementById('sortSelect').value=currentSort;
+update();
+});
 });
 // Theme toggle
 var sunIcon='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
 var moonIcon='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
-function setTheme(t,save){
-  if(t==='dark'){document.documentElement.setAttribute('data-theme','dark')}
-  else{document.documentElement.removeAttribute('data-theme')}
-  var icon=document.getElementById('themeIcon');
-  var label=document.getElementById('themeLabel');
-  if(t==='dark'){icon.innerHTML=sunIcon;label.textContent='Ljust läge'}
-  else{icon.innerHTML=moonIcon;label.textContent='Mörkt läge'}
-  if(save!==false){try{localStorage.setItem('theme',t)}catch(e){}}
+function setTheme(t){
+if(t==='dark'){document.documentElement.setAttribute('data-theme','dark')}
+else{document.documentElement.removeAttribute('data-theme')}
+var icon=document.getElementById('themeIcon');
+var label=document.getElementById('themeLabel');
+if(t==='dark'){icon.innerHTML=sunIcon;label.textContent='Ljust läge'}
+else{icon.innerHTML=moonIcon;label.textContent='Mörkt läge'}
+try{localStorage.setItem('theme',t)}catch(e){}
 }
 document.getElementById('themeToggle').addEventListener('click',function(){
-  var current=document.documentElement.getAttribute('data-theme')||'light';
-  setTheme(current==='dark'?'light':'dark');
+var current=document.documentElement.getAttribute('data-theme')||'light';
+setTheme(current==='dark'?'light':'dark');
 });
-try{
-  var saved=localStorage.getItem('theme');
-  if(saved){setTheme(saved,false)}
-  else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches){setTheme('dark',false)}
-}catch(e){}
+try{var saved=localStorage.getItem('theme');if(saved)setTheme(saved)}catch(e){}
+document.getElementById('count').textContent=DATA.length;
 update();
 </script>
 </body>
